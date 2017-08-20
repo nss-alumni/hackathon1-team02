@@ -3,7 +3,7 @@ s = Framer.Importer.load("imported/gitGumblePrototype@1x")
 
 # Firebase Setup
 {Firebase} = require 'firebase'
-firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
+firebase = new Firebase "https://git-gumble.firebaseio.com/"
 firebase.projectID = "git-gumble"
 firebase.secret = "gWGWJ6VXV8Ck0zTxYYsrrFqOHEaRqQkJ9qBDfPDX"
 firebase.debug = true
@@ -145,25 +145,43 @@ popBtn.visible = false
 
 s.Swipe_Card.visible = false
 
-# swipeCard = new Layer
-# 	parent: all.GitGumble
-# 	width: 250
-# 	height: 369
-# 	borderRadius: 10
-# 	backgroundColor: "red"
-# 	y: 80
-# 	shadowY: 2
-# 	shadowBlur: 5
-# 	shadowColor: "rgba(0,0,0, .5)"
-# swipeCard.centerX()
-
 ##SWIPE FUNCTIONS##
 cardWidth = 250
 cardHeight = 369
 
-newUser = (usersArray)->
+swipeCard = new Layer
+	parent: all.GitGumble
+	width: cardWidth
+	height: cardHeight
+	borderRadius: 10
+	backgroundColor: "#FFF"
+	y: 80
+	shadowY: 2
+	shadowBlur: 5
+	shadowColor: "rgba(0,0,0,.5)"
+	clip: true
+swipeCard.centerX()
+
+swipeCard.visible = false
+
+newUser = (usersArray) ->
 	if swipeCard
-		swipeCard.visible = false
+		swipeCard.visible = true
+	else 
+		swipeCard = new Layer
+			width: cardWidth
+			height: cardHeight
+			borderRadius: 10
+			backgroundColor: "#FFF"
+			y: 80
+			shadowY: 2
+			shadowBlur: 5
+			shadowColor: "rgba(0,0,0,.5)"
+			clip: true
+		swipeCard.centerX()
+		swipeCard.visible = true
+		print swipeCard
+
 	console.log(usersArray)
 	usersLength = usersArray.length
 	randomNumber = Math.floor(Math.random() * usersLength) + 1  
@@ -175,83 +193,15 @@ newUser = (usersArray)->
 	console.log(commitNumber)
 	commitPercent = commitNumber / 1000
 	if commitPercent < 0.20
-		swipeCard = new Layer
-			parent: all.GitGumble
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#eee"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
+		swipeCard.backgroundColor = "#eee"
 	else if commitPercent > 0.20 && commitPercent < 0.40
-		swipeCard = new Layer
-			parent: all.GitGumble
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#eee"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
+		swipeCard.backgroundColor = "#c6e48b"
 	else if commitPercent > 0.40 && commitPercent < 0.60
-		swipeCard = new Layer
-			parent: all.GitGumble
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#eee"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
+		swipeCard.backgroundColor = "#7bc96f"
 	else if commitPercent > 0.60 && commitPercent < 0.80
-		swipeCard = new Layer
-			parent: all.GitGumble
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#eee"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
+		swipeCard.backgroundColor = "#239a3b"
 	else if commitPercent > 0.80
-		swipeCard = new Layer
-			parent: all.GitGumble
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#eee"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
-
-swipeCard = new Layer
-	parent: all.GitGumble
-	width: cardWidth
-	height: cardHeight
-	borderRadius: 10
-	backgroundColor: "red"
-	y: 80
-	shadowY: 2
-	shadowBlur: 5
-	shadowColor: "rgba(0,0,0, .5)"
-	clip: true
-swipeCard.centerX()
+		swipeCard.backgroundColor = "#196127"
 
 likeLabel = new Layer
 	width: cardWidth 
@@ -268,36 +218,49 @@ nopeLabel = new Layer
 	backgroundColor: "#F5C252"
 	opacity: 0
 
-
-# # Clippy Layer
-# clippyLayer = new Layer
-# 	backgroundColor: "#FFF"
-# 
-# 	clippy.load 'Clippy', (agent) ->
-#       # Do anything with the loaded agent
-# 		agent.show()
-# 		agent.moveTo(250,500)
-# 		agent.speak("This is git gumble.  It judges you based on your github activity.")
-# 		agent.moveTo(250,450)
-# 		agent.speak("Swipe right if you think you'll like someone, swipe left if you think you'll hate         them.")
-# 		return
-
 # Flow Events
+usersArray = []
+globalArray = []
+getAllUsers = (users)->
+	usersArray = _.toArray(users)
+
 screen2 = false
 loginBtn.onClick -> 
-	flow.showNext(s.GitGumbleIntro)
-	loginBtn.visible = false
-	iconBtn.visible = true
-	userNameLoginBox.visible = false
-	userNameInput.visible = false
-	emailLoginBox.visible = false
-	emailInput.visible = false
-	swipeCard.visible = false
-	screen2 = true
+	print userNameValue
+	users_url = "/users/#{userNameValue}"
+	firebase.get users_url, (user) ->
+		print "Here is your user"
+		print user
+		if user
+			flow.showNext(s.GitGumbleIntro)
+			loginBtn.visible = false
+			iconBtn.visible = true
+			userNameLoginBox.visible = false
+			userNameInput.visible = false
+			emailLoginBox.visible = false
+			emailInput.visible = false
+			screen2 = true 
+	firebase.get("/users", getAllUsers, {orderBy: "$key"})
+	clippy.load 'Clippy', (agent) ->
+      # Do anything with the loaded agent
+		agent.moveTo(750,375)
+		agent.show()
+		agent.speak("Welcome to git gumble.  It judges you based on your github activity.")
+		agent.moveTo(700,485)
+		agent.speak("Swipe right (or click 'Pop') if someone seems cool. Swipe left (or click 'Stash') if they aren't cool enough for you.")
+		agent.moveTo(660,525)
+		agent.speak("Click or Tap the icon below to start!")
+		agent.play("GestureDown")
+		setTimeout (->
+			agent.hide()
+			return
+			), 14000
+		return
 	
 screen3 = false
 iconBtn.onClick -> 
 	flow.showNext(s.GitGumble)
+	newUser(usersArray)
 	loginBtn.visible = false
 	iconBtn.visible = false
 	stashBtn.visible = true
@@ -354,6 +317,17 @@ s.explained1.onClick ->
 	screen3 = false
 	screen4 = false
 	screen5 = false
+	
+onScreenUser = () ->
+	return 10
+
+
+popBtn.onClick ->
+	firebase.post("/history/", {currentUserID : currentUser.github_username, matchID : onScreenUser(), pop : true})
+	print currentUser
+	flow.showNext(s.GitGumbleIntro)
+	screen2 = true
+    loginBtn.visible = false
 
 # Keyboard Flow Events
 
@@ -403,106 +377,22 @@ emailInput = new InputModule.Input
 emailInput.on "keyup", ->
     emailValue = @value
 
-userNameInput.onClick -> 
-	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-	overlayBack = flow.children[0]
-	overlayBack.backgroundColor = "transparent"
-	
-emailInput.onClick -> 
-	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-	overlayBack = flow.children[0]
-	overlayBack.backgroundColor = "transparent"
-	
-# s.keys.onClick -> 
-# 	if screen2 == true
-# 		continueBtnignoreEvents = false
-# 		flow.showPrevious(s.screen2ExampleMobile)
-# 		s.continueBtn.animate
-# 			properties:
-# 				opacity: 1
-# 			options: 
-# 				curve: "spring(280,30,0)"
-# 		s.emailEntered.animate
-# 			width: 235
-# 			options: 
-# 				curve: "spring(280,30,0)"
-# 		s.passEntered.animate
-# 			width: 218
-# 			options: 
-# 				curve: "spring(280,30,0)"
-# 	else if screen3 == true
-# 		findCachesBtnignoreEvents = false
-# 		flow.showPrevious(s.screen3ExampleMobile)
-# 		s.findCachesBtn.animate
-# 			properties:
-# 				opacity: 1
-# 			options: 
-# 				curve: "sprint(280,30,0)"
-# 		s.userEntered.animate
-# 			width: 198
-# 			options: 
-# 				curve: "spring(280,30,0)"
-	
-###
-	EXAMPLE CODE
-###
-
-# https://codepen.io/stakes/pen/LELrdX 
-
-# countLabel = new Layer
-# 	x: 300
-# 	y: 28
-# 	width: 500
-# 	height: 140
-# 	backgroundColor: null
-# # countLabel.html = count
-# countLabel.style = 
-# 	fontFamily: "Helvetica, Arial, sans-serif"
-# 	fontSize: "100px"
-# 	lineHeight: "100px"
-# 	color: "#000000"
-# 
-# button = new Layer
-# 	width: 240
-# 	x: 20
-# 	y: 20
-# 	backgroundColor: "#E91E63"
-# 	borderRadius: 10
-# Utils.labelLayer button, "Tap to increment"
-
-# firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
-# 
-# count = null
-# 
-# firebase.on "value", (dataSnapshot)->
-#   
-# 	count = dataSnapshot.val().count
-# 	countLabel.html = count
-# 
-#   
-# button.on Events.Click, ->
-#   
-# 	firebase.set 
-# 		count: count+1
-#     
-# 	@opacity = .5
-# 	@animate
-# 		properties:
-# 			opacity: 1
-# 		time: .25
-
-# Github OAuth
-
-# Github JSON 
-
-# Swipe functionality 
-
+# userNameInput.onClick -> 
+# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+# 	overlayBack = flow.children[0]
+# 	overlayBack.backgroundColor = "transparent"
+# 	
+# emailInput.onClick -> 
+# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+# 	overlayBack = flow.children[0]
+# 	overlayBack.backgroundColor = "transparent"
+		
 swipeCard.childDic = {
 	"like" : likeLabel
 	"nope" : nopeLabel
 }
 
-swipeCard.states.add {
+swipeCard.states = {
 	"goLeftUp":
 		x: -Screen.width
 		y: -swipeCard.y
@@ -536,6 +426,7 @@ showLikeOrNope = (layer) ->
 		layer.childDic["like"].opacity = Utils.modulate(layer.midX, [Screen.width/2,Screen.width-100], [0,1])
 
 # ===========EVENT===========
+
 swipeCard.on Events.Move,->
 	rotateCard(this)
 	showLikeOrNope(this)
@@ -544,21 +435,22 @@ swipeCard.on Events.DragEnd, ->
 #     magnitude = Math.sqrt(Math.pow(card.draggable.velocity.x,2) + Math.pow(card.draggable.velocity.y,2))     
 	if swipeCard.midX < 0
 		if swipeCard.midY < Screen.height/2
-			swipeCard.states.switch("goLeftUp")
+			swipeCard.animate("goLeftUp")
 		else
-			swipeCard.states.switch("goLeftDown")
+			swipeCard.animate("goLeftDown")
 		swipeCard.destroy()
+		newUser(usersArray)
 	else if swipeCard.midX > Screen.width
 		if swipeCard.midY < Screen.height/2
-			swipeCard.states.switch("goRightUp")
+			swipeCard.animate("goRightUp")
 		else
-			swipeCard.states.switch("goRightDown")
+			swipeCard.animate("goRightDown")
 		swipeCard.destroy()
+		newUser(usersArray)
 
 swipeCard.on Events.DragMove, ->
 	rotateCard(this)
 	showLikeOrNope(this)
-
 
 # Flow component
 flow = new FlowComponent

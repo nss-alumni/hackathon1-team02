@@ -3,7 +3,7 @@ s = Framer.Importer.load("imported/gitGumblePrototype@1x")
 
 # Firebase Setup
 {Firebase} = require 'firebase'
-firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
+firebase = new Firebase "https://git-gumble.firebaseio.com/"
 firebase.projectID = "git-gumble"
 firebase.secret = "gWGWJ6VXV8Ck0zTxYYsrrFqOHEaRqQkJ9qBDfPDX"
 firebase.debug = true
@@ -162,7 +162,25 @@ cardWidth = 250
 cardHeight = 369
 
 swipeCard = new Layer
-			parent: all.GitGumble
+# 	parent: all.GitGumble
+	width: cardWidth
+	height: cardHeight
+	borderRadius: 10
+	backgroundColor: "#FFF"
+	y: 80
+	shadowY: 2
+	shadowBlur: 5
+	shadowColor: "rgba(0,0,0,.5)"
+	clip: true
+swipeCard.centerX()
+
+swipeCard.visible = false
+
+newUser = (usersArray) ->
+	if swipeCard
+		swipeCard.visible = true
+	else 
+		swipeCard = new Layer
 			width: cardWidth
 			height: cardHeight
 			borderRadius: 10
@@ -173,10 +191,9 @@ swipeCard = new Layer
 			shadowColor: "rgba(0,0,0,.5)"
 			clip: true
 		swipeCard.centerX()
+		swipeCard.visible = true
+		print swipeCard
 
-newUser = (usersArray) ->
-	if swipeCard
-		swipeCard.visible = false
 	console.log(usersArray)
 	usersLength = usersArray.length
 	randomNumber = Math.floor(Math.random() * usersLength) + 1  
@@ -243,8 +260,22 @@ loginBtn.onClick ->
 	userNameInput.visible = false
 	emailLoginBox.visible = false
 	emailInput.visible = false
-	swipeCard.visible = false
 	screen2 = true
+	clippy.load 'Clippy', (agent) ->
+      # Do anything with the loaded agent
+		agent.moveTo(750,375)
+		agent.show()
+		agent.speak("Welcome to git gumble.  It judges you based on your github activity.")
+		agent.moveTo(650,450)
+		agent.speak("Swipe right (or click 'Pop') if someone seems cool. Swipe left (or click 'Stash') if they aren't cool enough for you.")
+		agent.moveTo(600,400)
+		agent.speak("Click or Tap the icon below to start!")
+		agent.play("GestureDown")
+		setTimeout (->
+			agent.hide()
+			return
+			), 14000
+		return
 	
 screen3 = false
 iconBtn.onClick -> 
@@ -355,15 +386,15 @@ emailInput = new InputModule.Input
 emailInput.on "keyup", ->
     emailValue = @value
 
-userNameInput.onClick -> 
-	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-	overlayBack = flow.children[0]
-	overlayBack.backgroundColor = "transparent"
-	
-emailInput.onClick -> 
-	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-	overlayBack = flow.children[0]
-	overlayBack.backgroundColor = "transparent"
+# userNameInput.onClick -> 
+# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+# 	overlayBack = flow.children[0]
+# 	overlayBack.backgroundColor = "transparent"
+# 	
+# emailInput.onClick -> 
+# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+# 	overlayBack = flow.children[0]
+# 	overlayBack.backgroundColor = "transparent"
 	
 # s.keys.onClick -> 
 # 	if screen2 == true
@@ -395,66 +426,12 @@ emailInput.onClick ->
 # 			options: 
 # 				curve: "spring(280,30,0)"
 	
-###
-	EXAMPLE CODE
-###
-
-# https://codepen.io/stakes/pen/LELrdX 
-
-# countLabel = new Layer
-# 	x: 300
-# 	y: 28
-# 	width: 500
-# 	height: 140
-# 	backgroundColor: null
-# # countLabel.html = count
-# countLabel.style = 
-# 	fontFamily: "Helvetica, Arial, sans-serif"
-# 	fontSize: "100px"
-# 	lineHeight: "100px"
-# 	color: "#000000"
-# 
-# button = new Layer
-# 	width: 240
-# 	x: 20
-# 	y: 20
-# 	backgroundColor: "#E91E63"
-# 	borderRadius: 10
-# Utils.labelLayer button, "Tap to increment"
-
-# firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
-# 
-# count = null
-# 
-# firebase.on "value", (dataSnapshot)->
-#   
-# 	count = dataSnapshot.val().count
-# 	countLabel.html = count
-# 
-#   
-# button.on Events.Click, ->
-#   
-# 	firebase.set 
-# 		count: count+1
-#     
-# 	@opacity = .5
-# 	@animate
-# 		properties:
-# 			opacity: 1
-# 		time: .25
-
-# Github OAuth
-
-# Github JSON 
-
-# Swipe functionality 
-
 swipeCard.childDic = {
 	"like" : likeLabel
 	"nope" : nopeLabel
 }
 
-swipeCard.states.add {
+swipeCard.states = {
 	"goLeftUp":
 		x: -Screen.width
 		y: -swipeCard.y
@@ -496,21 +473,22 @@ swipeCard.on Events.DragEnd, ->
 #     magnitude = Math.sqrt(Math.pow(card.draggable.velocity.x,2) + Math.pow(card.draggable.velocity.y,2))     
 	if swipeCard.midX < 0
 		if swipeCard.midY < Screen.height/2
-			swipeCard.states.switch("goLeftUp")
+			swipeCard.animate("goLeftUp")
 		else
-			swipeCard.states.switch("goLeftDown")
+			swipeCard.animate("goLeftDown")
 		swipeCard.destroy()
+		newUser(usersArray)
 	else if swipeCard.midX > Screen.width
 		if swipeCard.midY < Screen.height/2
-			swipeCard.states.switch("goRightUp")
+			swipeCard.animate("goRightUp")
 		else
-			swipeCard.states.switch("goRightDown")
+			swipeCard.animate("goRightDown")
 		swipeCard.destroy()
+		newUser(usersArray)
 
 swipeCard.on Events.DragMove, ->
 	rotateCard(this)
 	showLikeOrNope(this)
-
 
 # Flow component
 flow = new FlowComponent

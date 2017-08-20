@@ -145,24 +145,12 @@ popBtn.visible = false
 
 s.Swipe_Card.visible = false
 
-# swipeCard = new Layer
-# 	parent: all.GitGumble
-# 	width: 250
-# 	height: 369
-# 	borderRadius: 10
-# 	backgroundColor: "red"
-# 	y: 80
-# 	shadowY: 2
-# 	shadowBlur: 5
-# 	shadowColor: "rgba(0,0,0, .5)"
-# swipeCard.centerX()
-
 ##SWIPE FUNCTIONS##
 cardWidth = 250
 cardHeight = 369
 
 swipeCard = new Layer
-# 	parent: all.GitGumble
+	parent: all.GitGumble
 	width: cardWidth
 	height: cardHeight
 	borderRadius: 10
@@ -230,20 +218,6 @@ nopeLabel = new Layer
 	backgroundColor: "#F5C252"
 	opacity: 0
 
-
-# # Clippy Layer
-# clippyLayer = new Layer
-# 	backgroundColor: "#FFF"
-# 
-# 	clippy.load 'Clippy', (agent) ->
-#       # Do anything with the loaded agent
-# 		agent.show()
-# 		agent.moveTo(250,500)
-# 		agent.speak("This is git gumble.  It judges you based on your github activity.")
-# 		agent.moveTo(250,450)
-# 		agent.speak("Swipe right if you think you'll like someone, swipe left if you think you'll hate         them.")
-# 		return
-
 # Flow Events
 usersArray = []
 globalArray = []
@@ -252,15 +226,36 @@ getAllUsers = (users)->
 
 screen2 = false
 loginBtn.onClick -> 
-	flow.showNext(s.GitGumbleIntro)
+	print userNameValue
+	users_url = "/users/#{userNameValue}"
+	firebase.get users_url, (user) ->
+		print "Here is your user"
+		print user
+		if user
+			flow.showNext(s.GitGumbleIntro)
+			loginBtn.visible = false
+			iconBtn.visible = true
+			userNameLoginBox.visible = false
+			userNameInput.visible = false
+			emailLoginBox.visible = false
+			emailInput.visible = false
+			screen2 = true 
 	firebase.get("/users", getAllUsers, {orderBy: "$key"})
-	loginBtn.visible = false
-	iconBtn.visible = true
-	userNameLoginBox.visible = false
-	userNameInput.visible = false
-	emailLoginBox.visible = false
-	emailInput.visible = false
-	screen2 = true
+	clippy.load 'Clippy', (agent) ->
+      # Do anything with the loaded agent
+		agent.moveTo(750,375)
+		agent.show()
+		agent.speak("Welcome to git gumble.  It judges you based on your github activity.")
+		agent.moveTo(700,485)
+		agent.speak("Swipe right (or click 'Pop') if someone seems cool. Swipe left (or click 'Stash') if they aren't cool enough for you.")
+		agent.moveTo(660,525)
+		agent.speak("Click or Tap the icon below to start!")
+		agent.play("GestureDown")
+		setTimeout (->
+			agent.hide()
+			return
+			), 14000
+		return
 	
 screen3 = false
 iconBtn.onClick -> 
@@ -322,6 +317,16 @@ s.explained1.onClick ->
 	screen3 = false
 	screen4 = false
 	screen5 = false
+	
+onScreenUser = () ->
+	return 10
+	
+popBtn.onClick ->
+	firebase.post("/history/", {currentUserID : currentUser.github_username, matchID : onScreenUser(), pop : true})
+	print currentUser
+	flow.showNext(s.GitGumbleIntro)
+	screen2 = true
+	loginBtn.visible = false
 
 # Keyboard Flow Events
 
@@ -380,37 +385,7 @@ emailInput.on "keyup", ->
 # 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
 # 	overlayBack = flow.children[0]
 # 	overlayBack.backgroundColor = "transparent"
-	
-# s.keys.onClick -> 
-# 	if screen2 == true
-# 		continueBtnignoreEvents = false
-# 		flow.showPrevious(s.screen2ExampleMobile)
-# 		s.continueBtn.animate
-# 			properties:
-# 				opacity: 1
-# 			options: 
-# 				curve: "spring(280,30,0)"
-# 		s.emailEntered.animate
-# 			width: 235
-# 			options: 
-# 				curve: "spring(280,30,0)"
-# 		s.passEntered.animate
-# 			width: 218
-# 			options: 
-# 				curve: "spring(280,30,0)"
-# 	else if screen3 == true
-# 		findCachesBtnignoreEvents = false
-# 		flow.showPrevious(s.screen3ExampleMobile)
-# 		s.findCachesBtn.animate
-# 			properties:
-# 				opacity: 1
-# 			options: 
-# 				curve: "sprint(280,30,0)"
-# 		s.userEntered.animate
-# 			width: 198
-# 			options: 
-# 				curve: "spring(280,30,0)"
-	
+		
 swipeCard.childDic = {
 	"like" : likeLabel
 	"nope" : nopeLabel

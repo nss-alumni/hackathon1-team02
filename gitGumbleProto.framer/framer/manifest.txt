@@ -52,19 +52,6 @@ clippyjs/src/images/border.png
 clippyjs/src/images/tip.png
 clippyjs/src/load.js
 clippyjs/src/queue.js
-framer/backups/backup-2017-08-20 15.38.24.coffee
-framer/backups/backup-2017-08-20 15.39.24.coffee
-framer/backups/backup-2017-08-20 15.40.24.coffee
-framer/backups/backup-2017-08-20 15.41.24.coffee
-framer/backups/backup-2017-08-20 15.43.24.coffee
-framer/backups/backup-2017-08-20 15.45.24.coffee
-framer/backups/backup-2017-08-20 15.48.24.coffee
-framer/backups/backup-2017-08-20 15.49.24.coffee
-framer/backups/backup-2017-08-20 15.50.24.coffee
-framer/backups/backup-2017-08-20 15.51.24.coffee
-framer/backups/backup-2017-08-20 15.52.24.coffee
-framer/backups/backup-2017-08-20 15.53.24.coffee
-framer/backups/backup-2017-08-20 15.54.24.coffee
 framer/backups/backup-2017-08-20 15.55.25.coffee
 framer/backups/backup-2017-08-20 15.56.25.coffee
 framer/backups/backup-2017-08-20 15.57.24.coffee
@@ -92,6 +79,19 @@ framer/backups/backup-2017-08-20 16.21.24.coffee
 framer/backups/backup-2017-08-20 16.22.24.coffee
 framer/backups/backup-2017-08-20 16.23.24.coffee
 framer/backups/backup-2017-08-20 16.24.24.coffee
+framer/backups/backup-2017-08-20 16.29.24.coffee
+framer/backups/backup-2017-08-20 16.33.24.coffee
+framer/backups/backup-2017-08-20 16.34.24.coffee
+framer/backups/backup-2017-08-20 16.43.24.coffee
+framer/backups/backup-2017-08-20 16.44.24.coffee
+framer/backups/backup-2017-08-20 16.45.24.coffee
+framer/backups/backup-2017-08-20 16.46.24.coffee
+framer/backups/backup-2017-08-20 16.47.24.coffee
+framer/backups/backup-2017-08-20 16.48.24.coffee
+framer/backups/backup-2017-08-20 16.52.24.coffee
+framer/backups/backup-2017-08-20 16.53.24.coffee
+framer/backups/backup-2017-08-20 16.54.24.coffee
+framer/backups/backup-2017-08-20 16.55.24.coffee
 framer/coffee-script.js
 framer/config.json
 framer/design.vekter
