@@ -52,46 +52,46 @@ clippyjs/src/images/border.png
 clippyjs/src/images/tip.png
 clippyjs/src/load.js
 clippyjs/src/queue.js
-framer/backups/backup-2017-08-20 11.11.00.coffee
-framer/backups/backup-2017-08-20 11.12.00.coffee
-framer/backups/backup-2017-08-20 11.12.59.coffee
-framer/backups/backup-2017-08-20 11.14.59.coffee
-framer/backups/backup-2017-08-20 11.15.59.coffee
-framer/backups/backup-2017-08-20 11.16.59.coffee
-framer/backups/backup-2017-08-20 11.17.59.coffee
-framer/backups/backup-2017-08-20 11.18.59.coffee
-framer/backups/backup-2017-08-20 11.19.59.coffee
-framer/backups/backup-2017-08-20 11.20.59.coffee
-framer/backups/backup-2017-08-20 11.21.59.coffee
-framer/backups/backup-2017-08-20 11.22.59.coffee
-framer/backups/backup-2017-08-20 11.23.59.coffee
-framer/backups/backup-2017-08-20 11.25.59.coffee
-framer/backups/backup-2017-08-20 11.27.59.coffee
-framer/backups/backup-2017-08-20 11.28.59.coffee
-framer/backups/backup-2017-08-20 11.29.59.coffee
-framer/backups/backup-2017-08-20 11.48.59.coffee
-framer/backups/backup-2017-08-20 11.49.59.coffee
-framer/backups/backup-2017-08-20 11.50.59.coffee
-framer/backups/backup-2017-08-20 11.54.59.coffee
-framer/backups/backup-2017-08-20 11.55.59.coffee
-framer/backups/backup-2017-08-20 12.04.59.coffee
-framer/backups/backup-2017-08-20 12.05.59.coffee
-framer/backups/backup-2017-08-20 12.06.59.coffee
-framer/backups/backup-2017-08-20 12.07.59.coffee
-framer/backups/backup-2017-08-20 12.09.59.coffee
-framer/backups/backup-2017-08-20 12.10.59.coffee
-framer/backups/backup-2017-08-20 12.11.59.coffee
-framer/backups/backup-2017-08-20 12.14.59.coffee
-framer/backups/backup-2017-08-20 12.15.59.coffee
-framer/backups/backup-2017-08-20 12.31.59.coffee
-framer/backups/backup-2017-08-20 12.32.59.coffee
-framer/backups/backup-2017-08-20 12.33.59.coffee
-framer/backups/backup-2017-08-20 12.36.59.coffee
-framer/backups/backup-2017-08-20 12.39.22.coffee
-framer/backups/backup-2017-08-20 12.39.22.vekter
-framer/backups/backup-2017-08-20 12.40.22.coffee
-framer/backups/backup-2017-08-20 13.00.24.coffee
-framer/backups/backup-2017-08-20 13.01.24.coffee
+framer/backups/backup-2017-08-20 13.27.24.coffee
+framer/backups/backup-2017-08-20 13.28.24.coffee
+framer/backups/backup-2017-08-20 13.29.24.coffee
+framer/backups/backup-2017-08-20 13.32.23.coffee
+framer/backups/backup-2017-08-20 13.33.23.coffee
+framer/backups/backup-2017-08-20 13.35.23.coffee
+framer/backups/backup-2017-08-20 13.36.23.coffee
+framer/backups/backup-2017-08-20 13.37.23.coffee
+framer/backups/backup-2017-08-20 13.41.26.coffee
+framer/backups/backup-2017-08-20 13.42.23.coffee
+framer/backups/backup-2017-08-20 13.44.23.coffee
+framer/backups/backup-2017-08-20 13.45.23.coffee
+framer/backups/backup-2017-08-20 13.46.23.coffee
+framer/backups/backup-2017-08-20 13.47.23.coffee
+framer/backups/backup-2017-08-20 13.48.23.coffee
+framer/backups/backup-2017-08-20 13.49.23.coffee
+framer/backups/backup-2017-08-20 13.51.23.coffee
+framer/backups/backup-2017-08-20 13.52.23.coffee
+framer/backups/backup-2017-08-20 13.55.23.coffee
+framer/backups/backup-2017-08-20 13.57.23.coffee
+framer/backups/backup-2017-08-20 14.00.23.coffee
+framer/backups/backup-2017-08-20 14.01.23.coffee
+framer/backups/backup-2017-08-20 14.02.23.coffee
+framer/backups/backup-2017-08-20 14.03.23.coffee
+framer/backups/backup-2017-08-20 14.19.24.coffee
+framer/backups/backup-2017-08-20 14.20.24.coffee
+framer/backups/backup-2017-08-20 14.21.24.coffee
+framer/backups/backup-2017-08-20 14.22.24.coffee
+framer/backups/backup-2017-08-20 14.23.24.coffee
+framer/backups/backup-2017-08-20 14.24.24.coffee
+framer/backups/backup-2017-08-20 14.25.24.coffee
+framer/backups/backup-2017-08-20 14.26.24.coffee
+framer/backups/backup-2017-08-20 14.27.24.coffee
+framer/backups/backup-2017-08-20 14.30.24.coffee
+framer/backups/backup-2017-08-20 14.31.24.coffee
+framer/backups/backup-2017-08-20 14.32.24.coffee
+framer/backups/backup-2017-08-20 14.33.24.coffee
+framer/backups/backup-2017-08-20 14.34.24.coffee
+framer/backups/backup-2017-08-20 14.35.24.coffee
+framer/backups/backup-2017-08-20 14.37.24.coffee
 framer/coffee-script.js
 framer/config.json
 framer/design.vekter
@@ -164,4 +164,5 @@ imported/gitGumblePrototype@1x/layers.json
 imported/gitGumblePrototype@1x/layers.json.js
 index.html
 modules/firebase.coffee
+modules/input.coffee
 modules/myModule.coffee
