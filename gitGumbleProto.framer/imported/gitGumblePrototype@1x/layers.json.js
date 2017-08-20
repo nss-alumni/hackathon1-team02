@@ -7,10 +7,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 		"originalName": "keyboard1ExampleMobile",
 		"maskFrame": null,
 		"layerFrame": {
-			"x": 353,
-			"y": 450,
-			"width": 323,
-			"height": 186
+			"x": 3802,
+			"y": 548,
+			"width": 646,
+			"height": 372
 		},
 		"visible": true,
 		"metadata": {},
@@ -25,8 +25,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"layerFrame": {
 					"x": 0,
 					"y": 0,
-					"width": 323,
-					"height": 186
+					"width": 645,
+					"height": 372
 				},
 				"visible": true,
 				"metadata": {
@@ -40,10 +40,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "keys",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 1.999999999999984,
-							"y": 8.000000000000023,
-							"width": 318,
-							"height": 176
+							"x": 4.999999999999854,
+							"y": 17.000000000000046,
+							"width": 635,
+							"height": 350
 						},
 						"visible": true,
 						"metadata": {
@@ -57,10 +57,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "lettersAndNumbers",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 8.579999999999984,
-									"y": 17.600000000000026,
-									"width": 303,
-									"height": 157
+									"x": 19.159999999999854,
+									"y": 35.20000000000005,
+									"width": 604,
+									"height": 312
 								},
 								"visible": true,
 								"metadata": {
@@ -69,10 +69,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-lettersAndNumbers-otexodi4.png",
 									"frame": {
-										"x": 8.579999999999984,
-										"y": 17.600000000000026,
-										"width": 303,
-										"height": 157
+										"x": 19.159999999999854,
+										"y": 35.20000000000005,
+										"width": 604,
+										"height": 312
 									}
 								},
 								"children": []
@@ -84,10 +84,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Icons",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 10.58,
-									"y": 110.60000000000005,
-									"width": 302,
-									"height": 62
+									"x": 21.16,
+									"y": 222.2,
+									"width": 603,
+									"height": 123
 								},
 								"visible": true,
 								"metadata": {
@@ -96,10 +96,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Icons-qta5rtvd.png",
 									"frame": {
-										"x": 10.58,
-										"y": 110.60000000000005,
-										"width": 302,
-										"height": 62
+										"x": 21.16,
+										"y": 222.2,
+										"width": 603,
+										"height": 123
 									}
 								},
 								"children": []
@@ -111,10 +111,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Shapes",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 2.579999999999984,
-									"y": 8.600000000000023,
-									"width": 318,
-									"height": 175
+									"x": 5.1599999999998545,
+									"y": 17.200000000000045,
+									"width": 635,
+									"height": 350
 								},
 								"visible": true,
 								"metadata": {
@@ -123,10 +123,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Shapes-mkm5mzew.png",
 									"frame": {
-										"x": 2.579999999999984,
-										"y": 8.600000000000023,
-										"width": 318,
-										"height": 175
+										"x": 5.1599999999998545,
+										"y": 17.200000000000045,
+										"width": 635,
+										"height": 350
 									}
 								},
 								"children": [
@@ -137,10 +137,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"originalName": "doneBtn01",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 244.58,
-											"y": 145.60000000000005,
-											"width": 76,
-											"height": 38
+											"x": 490.1599999999998,
+											"y": 292.2,
+											"width": 150,
+											"height": 75
 										},
 										"visible": true,
 										"metadata": {
@@ -149,10 +149,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"image": {
 											"path": "images/Layer-doneBtn01-n0y3nti2.png",
 											"frame": {
-												"x": 244.58,
-												"y": 145.60000000000005,
-												"width": 76,
-												"height": 38
+												"x": 490.1599999999998,
+												"y": 292.2,
+												"width": 150,
+												"height": 75
 											}
 										},
 										"children": []
@@ -170,8 +170,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"layerFrame": {
 							"x": 0,
 							"y": 0,
-							"width": 323,
-							"height": 186
+							"width": 645,
+							"height": 372
 						},
 						"visible": true,
 						"metadata": {
@@ -182,8 +182,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 							"frame": {
 								"x": 0,
 								"y": 0,
-								"width": 323,
-								"height": 186
+								"width": 645,
+								"height": 372
 							}
 						},
 						"children": []
@@ -199,10 +199,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 		"originalName": "GitGumble",
 		"maskFrame": null,
 		"layerFrame": {
-			"x": 1492,
-			"y": 68,
-			"width": 320,
-			"height": 568
+			"x": 2001,
+			"y": -216,
+			"width": 640,
+			"height": 1136
 		},
 		"visible": true,
 		"metadata": {},
@@ -210,10 +210,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 		"image": {
 			"path": "images/Layer-GitGumble-nje2qtvg.png",
 			"frame": {
-				"x": 1492,
-				"y": 68,
-				"width": 320,
-				"height": 568
+				"x": 2001,
+				"y": -216,
+				"width": 640,
+				"height": 1136
 			}
 		},
 		"children": [
@@ -224,10 +224,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "iPhoneStatusBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 6,
-					"y": 5,
-					"width": 308,
-					"height": 12
+					"x": 13,
+					"y": 11,
+					"width": 615,
+					"height": 21
 				},
 				"visible": true,
 				"metadata": {
@@ -236,10 +236,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-iPhoneStatusBar-qjczqtey.png",
 					"frame": {
-						"x": 6,
-						"y": 5,
-						"width": 308,
-						"height": 12
+						"x": 13,
+						"y": 11,
+						"width": 615,
+						"height": 21
 					}
 				},
 				"children": [
@@ -250,10 +250,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Left",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 6,
-							"y": 5,
-							"width": 106,
-							"height": 11
+							"x": 13,
+							"y": 11,
+							"width": 210,
+							"height": 20
 						},
 						"visible": true,
 						"metadata": {
@@ -262,10 +262,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Left-qjddqtg3.png",
 							"frame": {
-								"x": 6,
-								"y": 5,
-								"width": 106,
-								"height": 11
+								"x": 13,
+								"y": 11,
+								"width": 210,
+								"height": 20
 							}
 						},
 						"children": [
@@ -276,10 +276,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Signal",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 6,
-									"y": 7.585365853658573,
-									"width": 34,
-									"height": 6
+									"x": 13,
+									"y": 15.170731707317145,
+									"width": 67,
+									"height": 12
 								},
 								"visible": true,
 								"metadata": {
@@ -288,10 +288,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Signal-rkmzmki5.png",
 									"frame": {
-										"x": 6,
-										"y": 7.585365853658573,
-										"width": 34,
-										"height": 6
+										"x": 13,
+										"y": 15.170731707317145,
+										"width": 67,
+										"height": 12
 									}
 								},
 								"children": []
@@ -305,10 +305,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Center",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 136,
-							"y": 7,
-							"width": 51,
-							"height": 10
+							"x": 274,
+							"y": 13,
+							"width": 98,
+							"height": 19
 						},
 						"visible": true,
 						"metadata": {
@@ -317,18 +317,18 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 							"css": [
 								"/* 10:10 PM: */",
 								"font-family: .AppleSystemUIFont;",
-								"font-size: 12px;",
+								"font-size: 24px;",
 								"color: #000000;",
-								"letter-spacing: 0.1px;"
+								"letter-spacing: 0.2px;"
 							]
 						},
 						"image": {
 							"path": "images/Layer-Center-mdm2quey.png",
 							"frame": {
-								"x": 136,
-								"y": 7,
-								"width": 51,
-								"height": 10
+								"x": 274,
+								"y": 13,
+								"width": 98,
+								"height": 19
 							}
 						},
 						"children": []
@@ -340,10 +340,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Right",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 257,
-							"y": 5,
-							"width": 57,
-							"height": 12
+							"x": 514,
+							"y": 11,
+							"width": 114,
+							"height": 21
 						},
 						"visible": true,
 						"metadata": {
@@ -357,10 +357,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Charge",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 257,
-									"y": 5.073170731707364,
-									"width": 57,
-									"height": 11
+									"x": 514,
+									"y": 11.146341463414728,
+									"width": 114,
+									"height": 21
 								},
 								"visible": true,
 								"metadata": {
@@ -369,10 +369,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Charge-rufbrenb.png",
 									"frame": {
-										"x": 257,
-										"y": 5.073170731707364,
-										"width": 57,
-										"height": 11
+										"x": 514,
+										"y": 11.146341463414728,
+										"width": 114,
+										"height": 21
 									}
 								},
 								"children": [
@@ -383,10 +383,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"originalName": "Battery Icon",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 288.59126365054635,
-											"y": 5.073170731707364,
-											"width": 26,
-											"height": 11
+											"x": 578.1825273010927,
+											"y": 11.146341463414728,
+											"width": 50,
+											"height": 21
 										},
 										"visible": true,
 										"metadata": {
@@ -395,10 +395,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"image": {
 											"path": "images/Layer-Battery_Icon-q0mxnerf.png",
 											"frame": {
-												"x": 288.59126365054635,
-												"y": 5.073170731707364,
-												"width": 26,
-												"height": 11
+												"x": 578.1825273010927,
+												"y": 11.146341463414728,
+												"width": 50,
+												"height": 21
 											}
 										},
 										"children": []
@@ -416,10 +416,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "Buttons",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 10,
-					"y": 508,
-					"width": 300,
-					"height": 48
+					"x": 20,
+					"y": 1016,
+					"width": 600,
+					"height": 96
 				},
 				"visible": true,
 				"metadata": {
@@ -433,10 +433,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Like",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 172,
-							"y": 508,
-							"width": 138,
-							"height": 48
+							"x": 344,
+							"y": 1016,
+							"width": 276,
+							"height": 96
 						},
 						"visible": true,
 						"metadata": {
@@ -445,10 +445,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Like-mkmzmdux.png",
 							"frame": {
-								"x": 172,
-								"y": 508,
-								"width": 138,
-								"height": 48
+								"x": 344,
+								"y": 1016,
+								"width": 276,
+								"height": 96
 							}
 						},
 						"children": []
@@ -460,10 +460,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Nope",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 10,
-							"y": 508,
-							"width": 138,
-							"height": 48
+							"x": 20,
+							"y": 1016,
+							"width": 276,
+							"height": 96
 						},
 						"visible": true,
 						"metadata": {
@@ -472,10 +472,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Nope-rjiyqzew.png",
 							"frame": {
-								"x": 10,
-								"y": 508,
-								"width": 138,
-								"height": 48
+								"x": 20,
+								"y": 1016,
+								"width": 276,
+								"height": 96
 							}
 						},
 						"children": []
@@ -489,10 +489,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "Swipe Card",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 8,
-					"y": 67,
-					"width": 304,
-					"height": 433
+					"x": 16,
+					"y": 134,
+					"width": 608,
+					"height": 866
 				},
 				"visible": true,
 				"metadata": {
@@ -501,10 +501,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-Swipe_Card-mjeyntm1.png",
 					"frame": {
-						"x": 8,
-						"y": 67,
-						"width": 304,
-						"height": 433
+						"x": 16,
+						"y": 134,
+						"width": 608,
+						"height": 866
 					}
 				},
 				"children": []
@@ -516,10 +516,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "Actions",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 272,
-					"y": 30,
-					"width": 36,
-					"height": 26
+					"x": 545,
+					"y": 60,
+					"width": 70,
+					"height": 52
 				},
 				"visible": true,
 				"metadata": {
@@ -533,10 +533,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Hamburger",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 272,
-							"y": 30,
-							"width": 36,
-							"height": 26
+							"x": 545,
+							"y": 60,
+							"width": 70,
+							"height": 52
 						},
 						"visible": true,
 						"metadata": {
@@ -545,10 +545,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Hamburger-q0i3ndgy.png",
 							"frame": {
-								"x": 272,
-								"y": 30,
-								"width": 36,
-								"height": 26
+								"x": 545,
+								"y": 60,
+								"width": 70,
+								"height": 52
 							}
 						},
 						"children": []
@@ -564,10 +564,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 		"originalName": "GitGumbleLogin",
 		"maskFrame": null,
 		"layerFrame": {
-			"x": 770,
-			"y": 68,
-			"width": 320,
-			"height": 568
+			"x": 610,
+			"y": -216,
+			"width": 640,
+			"height": 1136
 		},
 		"visible": true,
 		"metadata": {},
@@ -580,10 +580,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "iPhoneStatusBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 6,
-					"y": 5,
-					"width": 308,
-					"height": 12
+					"x": 13,
+					"y": 11,
+					"width": 615,
+					"height": 21
 				},
 				"visible": true,
 				"metadata": {
@@ -592,10 +592,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-iPhoneStatusBar-rtyxney2.png",
 					"frame": {
-						"x": 6,
-						"y": 5,
-						"width": 308,
-						"height": 12
+						"x": 13,
+						"y": 11,
+						"width": 615,
+						"height": 21
 					}
 				},
 				"children": [
@@ -606,10 +606,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Left",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 6,
-							"y": 5,
-							"width": 106,
-							"height": 11
+							"x": 13,
+							"y": 11,
+							"width": 210,
+							"height": 20
 						},
 						"visible": true,
 						"metadata": {
@@ -618,10 +618,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Left-mkyyqtlc.png",
 							"frame": {
-								"x": 6,
-								"y": 5,
-								"width": 106,
-								"height": 11
+								"x": 13,
+								"y": 11,
+								"width": 210,
+								"height": 20
 							}
 						},
 						"children": [
@@ -632,10 +632,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Signal",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 6,
-									"y": 7.585365853658573,
-									"width": 34,
-									"height": 6
+									"x": 13,
+									"y": 15.170731707317145,
+									"width": 67,
+									"height": 12
 								},
 								"visible": true,
 								"metadata": {
@@ -644,10 +644,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Signal-rey4rkqz.png",
 									"frame": {
-										"x": 6,
-										"y": 7.585365853658573,
-										"width": 34,
-										"height": 6
+										"x": 13,
+										"y": 15.170731707317145,
+										"width": 67,
+										"height": 12
 									}
 								},
 								"children": []
@@ -661,10 +661,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Center",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 136,
-							"y": 7,
-							"width": 51,
-							"height": 10
+							"x": 274,
+							"y": 13,
+							"width": 98,
+							"height": 19
 						},
 						"visible": true,
 						"metadata": {
@@ -673,18 +673,18 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 							"css": [
 								"/* 10:10 PM: */",
 								"font-family: .AppleSystemUIFont;",
-								"font-size: 12px;",
+								"font-size: 24px;",
 								"color: #000000;",
-								"letter-spacing: 0.1px;"
+								"letter-spacing: 0.2px;"
 							]
 						},
 						"image": {
 							"path": "images/Layer-Center-ndnfqjfc.png",
 							"frame": {
-								"x": 136,
-								"y": 7,
-								"width": 51,
-								"height": 10
+								"x": 274,
+								"y": 13,
+								"width": 98,
+								"height": 19
 							}
 						},
 						"children": []
@@ -696,10 +696,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Right",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 257,
-							"y": 5,
-							"width": 57,
-							"height": 12
+							"x": 514,
+							"y": 11,
+							"width": 114,
+							"height": 21
 						},
 						"visible": true,
 						"metadata": {
@@ -713,10 +713,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Charge",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 257,
-									"y": 5.073170731707364,
-									"width": 57,
-									"height": 11
+									"x": 514,
+									"y": 11.146341463414728,
+									"width": 114,
+									"height": 21
 								},
 								"visible": true,
 								"metadata": {
@@ -725,10 +725,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Charge-otdcqzi5.png",
 									"frame": {
-										"x": 257,
-										"y": 5.073170731707364,
-										"width": 57,
-										"height": 11
+										"x": 514,
+										"y": 11.146341463414728,
+										"width": 114,
+										"height": 21
 									}
 								},
 								"children": [
@@ -739,10 +739,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"originalName": "Battery Icon",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 288.59126365054635,
-											"y": 5.073170731707364,
-											"width": 26,
-											"height": 11
+											"x": 578.1825273010927,
+											"y": 11.146341463414728,
+											"width": 50,
+											"height": 21
 										},
 										"visible": true,
 										"metadata": {
@@ -751,10 +751,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"image": {
 											"path": "images/Layer-Battery_Icon-rtrcrtfg.png",
 											"frame": {
-												"x": 288.59126365054635,
-												"y": 5.073170731707364,
-												"width": 26,
-												"height": 11
+												"x": 578.1825273010927,
+												"y": 11.146341463414728,
+												"width": 50,
+												"height": 21
 											}
 										},
 										"children": []
@@ -774,8 +774,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"layerFrame": {
 					"x": 0,
 					"y": 0,
-					"width": 320,
-					"height": 525
+					"width": 640,
+					"height": 1050
 				},
 				"visible": true,
 				"metadata": {
@@ -786,8 +786,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 					"frame": {
 						"x": 0,
 						"y": 0,
-						"width": 320,
-						"height": 525
+						"width": 640,
+						"height": 1050
 					}
 				},
 				"children": [
@@ -798,10 +798,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "User",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 46,
-							"y": 81,
-							"width": 228,
-							"height": 444
+							"x": 92,
+							"y": 162,
+							"width": 456,
+							"height": 888
 						},
 						"visible": true,
 						"metadata": {
@@ -810,10 +810,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-User-q0q1ndhd.png",
 							"frame": {
-								"x": 46,
-								"y": 81,
-								"width": 228,
-								"height": 444
+								"x": 92,
+								"y": 162,
+								"width": 456,
+								"height": 888
 							}
 						},
 						"children": []
@@ -829,10 +829,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 		"originalName": "POP Matches",
 		"maskFrame": null,
 		"layerFrame": {
-			"x": 1853,
-			"y": 68,
-			"width": 320,
-			"height": 568
+			"x": 2694,
+			"y": -216,
+			"width": 640,
+			"height": 1136
 		},
 		"visible": true,
 		"metadata": {},
@@ -845,10 +845,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "Actions",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 272,
-					"y": 30,
-					"width": 36,
-					"height": 26
+					"x": 545,
+					"y": 60,
+					"width": 70,
+					"height": 52
 				},
 				"visible": true,
 				"metadata": {
@@ -862,10 +862,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Hamburger",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 272,
-							"y": 30,
-							"width": 36,
-							"height": 26
+							"x": 545,
+							"y": 60,
+							"width": 70,
+							"height": 52
 						},
 						"visible": true,
 						"metadata": {
@@ -874,10 +874,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Hamburger-mdbemjvb.png",
 							"frame": {
-								"x": 272,
-								"y": 30,
-								"width": 36,
-								"height": 26
+								"x": 545,
+								"y": 60,
+								"width": 70,
+								"height": 52
 							}
 						},
 						"children": []
@@ -891,10 +891,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "iPhone Status Bar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 6,
-					"y": 5,
-					"width": 308,
-					"height": 12
+					"x": 13,
+					"y": 11,
+					"width": 615,
+					"height": 21
 				},
 				"visible": true,
 				"metadata": {
@@ -903,10 +903,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-iPhone_Status_Bar-m0y0m0mz.png",
 					"frame": {
-						"x": 6,
-						"y": 5,
-						"width": 308,
-						"height": 12
+						"x": 13,
+						"y": 11,
+						"width": 615,
+						"height": 21
 					}
 				},
 				"children": [
@@ -917,10 +917,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Left",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 6,
-							"y": 5,
-							"width": 106,
-							"height": 11
+							"x": 13,
+							"y": 11,
+							"width": 210,
+							"height": 20
 						},
 						"visible": true,
 						"metadata": {
@@ -929,10 +929,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Left-njffrjfd.png",
 							"frame": {
-								"x": 6,
-								"y": 5,
-								"width": 106,
-								"height": 11
+								"x": 13,
+								"y": 11,
+								"width": 210,
+								"height": 20
 							}
 						},
 						"children": [
@@ -943,10 +943,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Signal",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 6,
-									"y": 7.585365853658573,
-									"width": 34,
-									"height": 6
+									"x": 13,
+									"y": 15.170731707317145,
+									"width": 67,
+									"height": 12
 								},
 								"visible": true,
 								"metadata": {
@@ -955,10 +955,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Signal-rdbcqtg2.png",
 									"frame": {
-										"x": 6,
-										"y": 7.585365853658573,
-										"width": 34,
-										"height": 6
+										"x": 13,
+										"y": 15.170731707317145,
+										"width": 67,
+										"height": 12
 									}
 								},
 								"children": []
@@ -972,10 +972,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Center",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 136,
-							"y": 7,
-							"width": 51,
-							"height": 10
+							"x": 274,
+							"y": 13,
+							"width": 98,
+							"height": 19
 						},
 						"visible": true,
 						"metadata": {
@@ -984,18 +984,18 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 							"css": [
 								"/* 10:10 PM: */",
 								"font-family: .AppleSystemUIFont;",
-								"font-size: 12px;",
+								"font-size: 24px;",
 								"color: #000000;",
-								"letter-spacing: 0.1px;"
+								"letter-spacing: 0.2px;"
 							]
 						},
 						"image": {
 							"path": "images/Layer-Center-qtqxoejd.png",
 							"frame": {
-								"x": 136,
-								"y": 7,
-								"width": 51,
-								"height": 10
+								"x": 274,
+								"y": 13,
+								"width": 98,
+								"height": 19
 							}
 						},
 						"children": []
@@ -1007,10 +1007,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Right",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 257,
-							"y": 5,
-							"width": 57,
-							"height": 12
+							"x": 514,
+							"y": 11,
+							"width": 114,
+							"height": 21
 						},
 						"visible": true,
 						"metadata": {
@@ -1024,10 +1024,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Charge",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 257,
-									"y": 5.073170731707364,
-									"width": 57,
-									"height": 11
+									"x": 514,
+									"y": 11.146341463414728,
+									"width": 114,
+									"height": 21
 								},
 								"visible": true,
 								"metadata": {
@@ -1036,10 +1036,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Charge-nkzcrtg0.png",
 									"frame": {
-										"x": 257,
-										"y": 5.073170731707364,
-										"width": 57,
-										"height": 11
+										"x": 514,
+										"y": 11.146341463414728,
+										"width": 114,
+										"height": 21
 									}
 								},
 								"children": [
@@ -1050,10 +1050,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"originalName": "Battery Icon",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 288.59126365054635,
-											"y": 5.073170731707364,
-											"width": 26,
-											"height": 11
+											"x": 578.1825273010927,
+											"y": 11.146341463414728,
+											"width": 50,
+											"height": 21
 										},
 										"visible": true,
 										"metadata": {
@@ -1062,10 +1062,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"image": {
 											"path": "images/Layer-Battery_Icon-odq5m0m3.png",
 											"frame": {
-												"x": 288.59126365054635,
-												"y": 5.073170731707364,
-												"width": 26,
-												"height": 11
+												"x": 578.1825273010927,
+												"y": 11.146341463414728,
+												"width": 50,
+												"height": 21
 											}
 										},
 										"children": []
@@ -1083,10 +1083,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "Actions",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": -567,
-					"y": 30,
-					"width": 36,
-					"height": 26
+					"x": -1133,
+					"y": 60,
+					"width": 70,
+					"height": 52
 				},
 				"visible": true,
 				"metadata": {
@@ -1100,10 +1100,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Hamburger Copy",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": -567,
-							"y": 30,
-							"width": 36,
-							"height": 26
+							"x": -1133,
+							"y": 60,
+							"width": 70,
+							"height": 52
 						},
 						"visible": true,
 						"metadata": {
@@ -1112,10 +1112,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Hamburger_Copy-nzg1rte3.png",
 							"frame": {
-								"x": -567,
-								"y": 30,
-								"width": 36,
-								"height": 26
+								"x": -1133,
+								"y": 60,
+								"width": 70,
+								"height": 52
 							}
 						},
 						"children": []
@@ -1129,10 +1129,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "New POP Matches",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 57,
-					"y": 68,
-					"width": 206,
-					"height": 19
+					"x": 115,
+					"y": 137,
+					"width": 410,
+					"height": 37
 				},
 				"visible": true,
 				"metadata": {
@@ -1146,10 +1146,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "New POP Matches Title",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 57,
-							"y": 68,
-							"width": 206,
-							"height": 19
+							"x": 115,
+							"y": 137,
+							"width": 410,
+							"height": 37
 						},
 						"visible": true,
 						"metadata": {
@@ -1158,17 +1158,17 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 							"css": [
 								"/* New POP Matches: */",
 								"font-family: Helvetica-Bold;",
-								"font-size: 24px;",
+								"font-size: 48px;",
 								"color: #000000;"
 							]
 						},
 						"image": {
 							"path": "images/Layer-New_POP_Matches_Title-q0myqtbd.png",
 							"frame": {
-								"x": 57,
-								"y": 68,
-								"width": 206,
-								"height": 19
+								"x": 115,
+								"y": 137,
+								"width": 410,
+								"height": 37
 							}
 						},
 						"children": []
@@ -1182,10 +1182,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "Matches",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": -143,
-					"y": 59,
-					"width": 464,
-					"height": 511
+					"x": -286,
+					"y": 118,
+					"width": 927,
+					"height": 1021
 				},
 				"visible": true,
 				"metadata": {
@@ -1199,10 +1199,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Match 5 ",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 10,
-							"y": 207,
-							"width": 311,
-							"height": 87
+							"x": 20,
+							"y": 414,
+							"width": 621,
+							"height": 173
 						},
 						"visible": true,
 						"metadata": {
@@ -1211,10 +1211,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Match_5_-munbqurc.png",
 							"frame": {
-								"x": 10,
-								"y": 207,
-								"width": 311,
-								"height": 87
+								"x": 20,
+								"y": 414,
+								"width": 621,
+								"height": 173
 							}
 						},
 						"children": []
@@ -1226,10 +1226,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Match 4 ",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": -143,
-							"y": 59,
-							"width": 464,
-							"height": 147
+							"x": -286,
+							"y": 118,
+							"width": 927,
+							"height": 293
 						},
 						"visible": true,
 						"metadata": {
@@ -1238,10 +1238,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Match_4_-njrbodbd.png",
 							"frame": {
-								"x": -143,
-								"y": 59,
-								"width": 464,
-								"height": 147
+								"x": -286,
+								"y": 118,
+								"width": 927,
+								"height": 293
 							}
 						},
 						"children": []
@@ -1253,10 +1253,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Match 3",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 10,
-							"y": 483,
-							"width": 311,
-							"height": 87
+							"x": 20,
+							"y": 966,
+							"width": 621,
+							"height": 173
 						},
 						"visible": true,
 						"metadata": {
@@ -1265,10 +1265,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Match_3-rja1qjvf.png",
 							"frame": {
-								"x": 10,
-								"y": 483,
-								"width": 311,
-								"height": 87
+								"x": 20,
+								"y": 966,
+								"width": 621,
+								"height": 173
 							}
 						},
 						"children": []
@@ -1280,10 +1280,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Match 2",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 10,
-							"y": 389,
-							"width": 311,
-							"height": 87
+							"x": 20,
+							"y": 778,
+							"width": 621,
+							"height": 173
 						},
 						"visible": true,
 						"metadata": {
@@ -1292,10 +1292,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Match_2-nja3ouzd.png",
 							"frame": {
-								"x": 10,
-								"y": 389,
-								"width": 311,
-								"height": 87
+								"x": 20,
+								"y": 778,
+								"width": 621,
+								"height": 173
 							}
 						},
 						"children": []
@@ -1307,10 +1307,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Match 1",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 10,
-							"y": 295,
-							"width": 311,
-							"height": 87
+							"x": 20,
+							"y": 590,
+							"width": 621,
+							"height": 173
 						},
 						"visible": true,
 						"metadata": {
@@ -1319,10 +1319,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Match_1-que3oeix.png",
 							"frame": {
-								"x": 10,
-								"y": 295,
-								"width": 311,
-								"height": 87
+								"x": 20,
+								"y": 590,
+								"width": 621,
+								"height": 173
 							}
 						},
 						"children": []
@@ -1338,10 +1338,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 		"originalName": "GitGumbleIntro",
 		"maskFrame": null,
 		"layerFrame": {
-			"x": 1131,
-			"y": 68,
-			"width": 320,
-			"height": 568
+			"x": 1306,
+			"y": -216,
+			"width": 640,
+			"height": 1136
 		},
 		"visible": true,
 		"metadata": {},
@@ -1354,10 +1354,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "iPhoneStatusBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 6,
-					"y": 5,
-					"width": 308,
-					"height": 12
+					"x": 13,
+					"y": 11,
+					"width": 615,
+					"height": 21
 				},
 				"visible": true,
 				"metadata": {
@@ -1366,10 +1366,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-iPhoneStatusBar-ourerdk4.png",
 					"frame": {
-						"x": 6,
-						"y": 5,
-						"width": 308,
-						"height": 12
+						"x": 13,
+						"y": 11,
+						"width": 615,
+						"height": 21
 					}
 				},
 				"children": [
@@ -1380,10 +1380,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Left",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 6,
-							"y": 5,
-							"width": 106,
-							"height": 11
+							"x": 13,
+							"y": 11,
+							"width": 210,
+							"height": 20
 						},
 						"visible": true,
 						"metadata": {
@@ -1392,10 +1392,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-Left-qje1mthd.png",
 							"frame": {
-								"x": 6,
-								"y": 5,
-								"width": 106,
-								"height": 11
+								"x": 13,
+								"y": 11,
+								"width": 210,
+								"height": 20
 							}
 						},
 						"children": [
@@ -1406,10 +1406,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Signal",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 6,
-									"y": 7.585365853658573,
-									"width": 34,
-									"height": 6
+									"x": 13,
+									"y": 15.170731707317145,
+									"width": 67,
+									"height": 12
 								},
 								"visible": true,
 								"metadata": {
@@ -1418,10 +1418,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Signal-ndzfqjk5.png",
 									"frame": {
-										"x": 6,
-										"y": 7.585365853658573,
-										"width": 34,
-										"height": 6
+										"x": 13,
+										"y": 15.170731707317145,
+										"width": 67,
+										"height": 12
 									}
 								},
 								"children": []
@@ -1435,10 +1435,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Center",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 136,
-							"y": 7,
-							"width": 51,
-							"height": 10
+							"x": 274,
+							"y": 13,
+							"width": 98,
+							"height": 19
 						},
 						"visible": true,
 						"metadata": {
@@ -1447,18 +1447,18 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 							"css": [
 								"/* 10:10 PM: */",
 								"font-family: .AppleSystemUIFont;",
-								"font-size: 12px;",
+								"font-size: 24px;",
 								"color: #000000;",
-								"letter-spacing: 0.1px;"
+								"letter-spacing: 0.2px;"
 							]
 						},
 						"image": {
 							"path": "images/Layer-Center-njvdntk0.png",
 							"frame": {
-								"x": 136,
-								"y": 7,
-								"width": 51,
-								"height": 10
+								"x": 274,
+								"y": 13,
+								"width": 98,
+								"height": 19
 							}
 						},
 						"children": []
@@ -1470,10 +1470,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"originalName": "Right",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 257,
-							"y": 5,
-							"width": 57,
-							"height": 12
+							"x": 514,
+							"y": 11,
+							"width": 114,
+							"height": 21
 						},
 						"visible": true,
 						"metadata": {
@@ -1487,10 +1487,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"originalName": "Charge",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 257,
-									"y": 5.073170731707364,
-									"width": 57,
-									"height": 11
+									"x": 514,
+									"y": 11.146341463414728,
+									"width": 114,
+									"height": 21
 								},
 								"visible": true,
 								"metadata": {
@@ -1499,10 +1499,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 								"image": {
 									"path": "images/Layer-Charge-qtzdmdlb.png",
 									"frame": {
-										"x": 257,
-										"y": 5.073170731707364,
-										"width": 57,
-										"height": 11
+										"x": 514,
+										"y": 11.146341463414728,
+										"width": 114,
+										"height": 21
 									}
 								},
 								"children": [
@@ -1513,10 +1513,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"originalName": "Battery Icon",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 288.59126365054635,
-											"y": 5.073170731707364,
-											"width": 26,
-											"height": 11
+											"x": 578.1825273010927,
+											"y": 11.146341463414728,
+											"width": 50,
+											"height": 21
 										},
 										"visible": true,
 										"metadata": {
@@ -1525,10 +1525,10 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 										"image": {
 											"path": "images/Layer-Battery_Icon-rkqynunb.png",
 											"frame": {
-												"x": 288.59126365054635,
-												"y": 5.073170731707364,
-												"width": 26,
-												"height": 11
+												"x": 578.1825273010927,
+												"y": 11.146341463414728,
+												"width": 50,
+												"height": 21
 											}
 										},
 										"children": []
@@ -1548,8 +1548,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"layerFrame": {
 					"x": 0,
 					"y": 0,
-					"width": 320,
-					"height": 569
+					"width": 640,
+					"height": 1134
 				},
 				"visible": true,
 				"metadata": {
@@ -1560,8 +1560,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 					"frame": {
 						"x": 0,
 						"y": 0,
-						"width": 320,
-						"height": 569
+						"width": 640,
+						"height": 1134
 					}
 				},
 				"children": []
@@ -1575,207 +1575,15 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 		"originalName": "Navigation",
 		"maskFrame": null,
 		"layerFrame": {
-			"x": 2214,
-			"y": 68,
+			"x": 3407,
+			"y": -216,
 			"width": 320,
-			"height": 568
+			"height": 1136
 		},
 		"visible": true,
 		"metadata": {},
 		"backgroundColor": "rgba(239, 243, 247, 1)",
 		"children": [
-			{
-				"objectId": "0F3B5000-9168-4B61-850E-ACC77C0411A2",
-				"kind": "group",
-				"name": "iPhoneStatusBar3",
-				"originalName": "iPhoneStatusBar",
-				"maskFrame": null,
-				"layerFrame": {
-					"x": 6,
-					"y": 5,
-					"width": 308,
-					"height": 12
-				},
-				"visible": true,
-				"metadata": {
-					"opacity": 1
-				},
-				"image": {
-					"path": "images/Layer-iPhoneStatusBar-meyzqjuw.png",
-					"frame": {
-						"x": 6,
-						"y": 5,
-						"width": 308,
-						"height": 12
-					}
-				},
-				"children": [
-					{
-						"objectId": "413D4432-CB7B-4364-AC60-E995E9B36E47",
-						"kind": "group",
-						"name": "Left4",
-						"originalName": "Left",
-						"maskFrame": null,
-						"layerFrame": {
-							"x": 6,
-							"y": 5,
-							"width": 106,
-							"height": 11
-						},
-						"visible": true,
-						"metadata": {
-							"opacity": 1
-						},
-						"image": {
-							"path": "images/Layer-Left-ndezrdq0.png",
-							"frame": {
-								"x": 6,
-								"y": 5,
-								"width": 106,
-								"height": 11
-							}
-						},
-						"children": [
-							{
-								"objectId": "C8E56C9E-7659-48A7-8B94-0C98BB429C9C",
-								"kind": "group",
-								"name": "Signal4",
-								"originalName": "Signal",
-								"maskFrame": null,
-								"layerFrame": {
-									"x": 6,
-									"y": 7.585365853658573,
-									"width": 34,
-									"height": 6
-								},
-								"visible": true,
-								"metadata": {
-									"opacity": 1
-								},
-								"image": {
-									"path": "images/Layer-Signal-qzhfntzd.png",
-									"frame": {
-										"x": 6,
-										"y": 7.585365853658573,
-										"width": 34,
-										"height": 6
-									}
-								},
-								"children": []
-							}
-						]
-					},
-					{
-						"objectId": "FE0A4227-55F0-4827-A351-E7E6887F4539",
-						"kind": "text",
-						"name": "Center4",
-						"originalName": "Center",
-						"maskFrame": null,
-						"layerFrame": {
-							"x": 136,
-							"y": 7,
-							"width": 51,
-							"height": 10
-						},
-						"visible": true,
-						"metadata": {
-							"opacity": 1,
-							"string": "10:10 PM",
-							"css": [
-								"/* 10:10 PM: */",
-								"font-family: .AppleSystemUIFont;",
-								"font-size: 12px;",
-								"color: #000000;",
-								"letter-spacing: 0.1px;"
-							]
-						},
-						"image": {
-							"path": "images/Layer-Center-rkuwqtqy.png",
-							"frame": {
-								"x": 136,
-								"y": 7,
-								"width": 51,
-								"height": 10
-							}
-						},
-						"children": []
-					},
-					{
-						"objectId": "EEC7585F-3CEB-4BCA-88CE-7B6C133B966C",
-						"kind": "group",
-						"name": "Right4",
-						"originalName": "Right",
-						"maskFrame": null,
-						"layerFrame": {
-							"x": 257,
-							"y": 5,
-							"width": 57,
-							"height": 12
-						},
-						"visible": true,
-						"metadata": {
-							"opacity": 1
-						},
-						"children": [
-							{
-								"objectId": "B5AA7B4F-DA74-48A3-83C8-7CFE511D3E70",
-								"kind": "group",
-								"name": "Charge4",
-								"originalName": "Charge",
-								"maskFrame": null,
-								"layerFrame": {
-									"x": 257,
-									"y": 5.073170731707364,
-									"width": 57,
-									"height": 11
-								},
-								"visible": true,
-								"metadata": {
-									"opacity": 1
-								},
-								"image": {
-									"path": "images/Layer-Charge-qjvbqtdc.png",
-									"frame": {
-										"x": 257,
-										"y": 5.073170731707364,
-										"width": 57,
-										"height": 11
-									}
-								},
-								"children": [
-									{
-										"objectId": "4A099064-DF22-448C-B98A-A51150968697",
-										"kind": "group",
-										"name": "Battery_Icon4",
-										"originalName": "Battery Icon",
-										"maskFrame": null,
-										"layerFrame": {
-											"x": 288.59126365054635,
-											"y": 5.073170731707364,
-											"width": 26,
-											"height": 11
-										},
-										"visible": true,
-										"metadata": {
-											"opacity": 1
-										},
-										"image": {
-											"path": "images/Layer-Battery_Icon-neewotkw.png",
-											"frame": {
-												"x": 288.59126365054635,
-												"y": 5.073170731707364,
-												"width": 26,
-												"height": 11
-											}
-										},
-										"children": []
-									}
-								]
-							}
-						]
-					}
-				]
-			},
 			{
 				"objectId": "EEA876ED-B20B-4128-A456-35FAF8795A33",
 				"kind": "group",
@@ -1786,7 +1594,7 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 					"x": 0,
 					"y": 0,
 					"width": 320,
-					"height": 568
+					"height": 1136
 				},
 				"visible": true,
 				"metadata": {
@@ -1798,7 +1606,7 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 						"x": 0,
 						"y": 0,
 						"width": 320,
-						"height": 568
+						"height": 1136
 					}
 				},
 				"children": []
