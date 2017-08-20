@@ -68,11 +68,19 @@ textLabel.style.textTransform = "uppercase"
 textLabel.style.lineHeight = "50px"
 textLabel.style.textAlign = "center"
 
+clippyLayer = new Layer
+	backgroundColor: "white"
+	
+
+clippyLayer.center()
+
 # Flow Events
 screen2 = false
 loginBtn.onClick -> 
 	flow.showNext(s.GitGumbleIntro)
 	screen2 = true
+	
+
 ###
 	EXAMPLE CODE
 ###

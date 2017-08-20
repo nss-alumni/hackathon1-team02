@@ -132,7 +132,14 @@ popBtn.visible = false
 # clippyLayer = new Layer
 #   backgroundColor: "#FFF"
 
-
+clippy.load 'Clippy', (agent) ->
+      # Do anything with the loaded agent
+      agent.show()
+      agent.moveTo(700,500)
+      agent.speak("This is git gumble.  It judges you based on your github activity.")
+      agent.moveTo(700,450)
+      agent.speak("Swipe right if you think you'll like someone, swipe left if you think you'll hate them.")
+      return
 # Flow Events
 screen2 = false
 loginBtn.onClick -> 
@@ -140,7 +147,6 @@ loginBtn.onClick ->
     loginBtn.visible = false
     iconBtn.visible = true
     screen2 = true
-    
     
     
 screen3 = false

@@ -1,5 +1,5 @@
 # Import file "gitGumblePrototype"
-sketch = Framer.Importer.load("imported/gitGumblePrototype@1x")
+s = Framer.Importer.load("imported/gitGumblePrototype@1x")
 # Firebase Setup
 {Firebase} = require 'firebase'
 firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
@@ -31,11 +31,58 @@ all.centerX()
 flow = new FlowComponent
 	backgroundColor: "#FCFFEE"
 	parent.all 
-	width: all.wi
+	width: all.width
+	height: all.height
+	
+flow.showNext(s.GitGumbleLogin)
 
-###
-If you're using Framer Studio (you should be!) you'll want to include the Firebase library in your index.html
-###
+# Default States 
+# screen 1 : GitGumbleLogin
+# username = new TextLayer
+	
+# password = new TextLayer
+
+loginBtn = new Layer
+	width: 100
+	height: 50
+	backgroundColor: "#F5C252"
+	borderRadius: 10
+	shadowY: 2
+	shadowBlur: 5
+	shadowColor: "rgba(0,0,0, .5)"
+	
+loginBtn.centerX()
+
+textLabel = new Layer
+	width: 100
+	height: 50
+	backgroundColor: null
+	html: "Login"
+	superLayer: loginBtn
+	
+textLabel.style.color = "#000"     
+textLabel.style.fontSize = "20px"
+textLabel.style.fontWeight = "500"
+textLabel.style.letterSpacing = ".1em"
+textLabel.style.textTransform = "uppercase"
+textLabel.style.lineHeight = "50px"
+textLabel.style.textAlign = "center"
+
+# Flow Events
+screen2 = false
+loginBtn.onClick -> 
+	flow.showNext(s.GitGumbleIntro)
+	screen2 = true
+	clippy.load 'Clippy', (agent) ->
+	  # Do anything with the loaded agent
+		agent.show()
+		agent.moveTo(250,500)
+		agent.speak("This is git gumble.  It judges you based on your github activity.")
+		agent.moveTo(250,450)
+		agent.speak("Swipe right if you think you'll like someone, swipe left if you think you'll hate them.")
+		return
+
+
 
 ###
 	EXAMPLE CODE

@@ -73,17 +73,16 @@ screen2 = false
 loginBtn.onClick -> 
 	flow.showNext(s.GitGumbleIntro)
 	screen2 = true
-
-loginBtn2 = new Layer
-	width: 100
-	height: 50
-	backgroundColor: "#F5C252"
-	borderRadius: 10
-	shadowY: 2
-	shadowBlur: 5
-	shadowColor: "rgba(0,0,0, .5)"
-	
-l	
+	clippy.load 'Clippy', (agent) ->
+	  # Do anything with the loaded agent
+		x: 0
+		y: 0
+		agent.show()
+		agent.moveTo(250,500)
+		agent.speak("This is git gumble.  It judges you based on your github activity.")
+		agent.moveTo(250,450)
+		agent.speak("Swipe right if you think you'll like someone, swipe left if you think you'll hate them.")
+		return
 
 ###
 	EXAMPLE CODE
