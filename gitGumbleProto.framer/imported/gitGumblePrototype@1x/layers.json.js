@@ -1591,7 +1591,7 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"originalName": "navigation",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 0,
+					"x": 1,
 					"y": 0,
 					"width": 320,
 					"height": 1136
@@ -1603,13 +1603,122 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-navigation-ruvbodc2.png",
 					"frame": {
-						"x": 0,
+						"x": 1,
 						"y": 0,
 						"width": 320,
 						"height": 1136
 					}
 				},
-				"children": []
+				"children": [
+					{
+						"objectId": "FDE7398A-40F1-4F90-9A8A-ED51DCC3E110",
+						"kind": "group",
+						"name": "popMatches",
+						"originalName": "popMatches",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 53,
+							"y": 192,
+							"width": 217,
+							"height": 28
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-popMatches-rkrfnzm5.png",
+							"frame": {
+								"x": 53,
+								"y": 192,
+								"width": 217,
+								"height": 28
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "5A25EB1C-10D8-4C88-B359-B3836502B318",
+						"kind": "group",
+						"name": "explained1",
+						"originalName": "explained",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 51,
+							"y": 407,
+							"width": 151,
+							"height": 34
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-explained-nueynuvc.png",
+							"frame": {
+								"x": 51,
+								"y": 407,
+								"width": 151,
+								"height": 34
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "E691EE08-C09B-4978-B946-EA4732BBC525",
+						"kind": "group",
+						"name": "gitGumbling",
+						"originalName": "gitGumbling",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 51,
+							"y": 301,
+							"width": 191,
+							"height": 34
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-gitGumbling-rty5muvf.png",
+							"frame": {
+								"x": 51,
+								"y": 301,
+								"width": 191,
+								"height": 34
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "AFCBDA1D-4FB3-4C4C-AE85-1CCD497BE00A",
+						"kind": "group",
+						"name": "logout",
+						"originalName": "logout",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 52,
+							"y": 1076,
+							"width": 150,
+							"height": 28
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-logout-quzdqkrb.png",
+							"frame": {
+								"x": 52,
+								"y": 1076,
+								"width": 150,
+								"height": 28
+							}
+						},
+						"children": []
+					}
+				]
 			}
 		]
 	}

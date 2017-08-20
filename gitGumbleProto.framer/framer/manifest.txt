@@ -52,16 +52,6 @@ clippyjs/src/images/border.png
 clippyjs/src/images/tip.png
 clippyjs/src/load.js
 clippyjs/src/queue.js
-framer/backups/backup-2017-08-20 13.27.24.coffee
-framer/backups/backup-2017-08-20 13.28.24.coffee
-framer/backups/backup-2017-08-20 13.29.24.coffee
-framer/backups/backup-2017-08-20 13.32.23.coffee
-framer/backups/backup-2017-08-20 13.33.23.coffee
-framer/backups/backup-2017-08-20 13.35.23.coffee
-framer/backups/backup-2017-08-20 13.36.23.coffee
-framer/backups/backup-2017-08-20 13.37.23.coffee
-framer/backups/backup-2017-08-20 13.41.26.coffee
-framer/backups/backup-2017-08-20 13.42.23.coffee
 framer/backups/backup-2017-08-20 13.44.23.coffee
 framer/backups/backup-2017-08-20 13.45.23.coffee
 framer/backups/backup-2017-08-20 13.46.23.coffee
@@ -92,6 +82,16 @@ framer/backups/backup-2017-08-20 14.33.24.coffee
 framer/backups/backup-2017-08-20 14.34.24.coffee
 framer/backups/backup-2017-08-20 14.35.24.coffee
 framer/backups/backup-2017-08-20 14.37.24.coffee
+framer/backups/backup-2017-08-20 14.38.24.coffee
+framer/backups/backup-2017-08-20 14.54.24.coffee
+framer/backups/backup-2017-08-20 14.55.24.coffee
+framer/backups/backup-2017-08-20 14.57.24.coffee
+framer/backups/backup-2017-08-20 15.02.24.coffee
+framer/backups/backup-2017-08-20 15.03.24.coffee
+framer/backups/backup-2017-08-20 15.04.25.coffee
+framer/backups/backup-2017-08-20 15.05.24.coffee
+framer/backups/backup-2017-08-20 15.07.24.coffee
+framer/backups/backup-2017-08-20 15.08.24.coffee
 framer/coffee-script.js
 framer/config.json
 framer/design.vekter
@@ -127,8 +127,10 @@ imported/gitGumblePrototype@1x/images/Layer-Charge-otdcqzi5.png
 imported/gitGumblePrototype@1x/images/Layer-Charge-qtzdmdlb.png
 imported/gitGumblePrototype@1x/images/Layer-Charge-rufbrenb.png
 imported/gitGumblePrototype@1x/images/Layer-doneBtn01-n0y3nti2.png
+imported/gitGumblePrototype@1x/images/Layer-explained-nueynuvc.png
 imported/gitGumblePrototype@1x/images/Layer-explained-qzuzmjkx.png
 imported/gitGumblePrototype@1x/images/Layer-GitGumble-nje2qtvg.png
+imported/gitGumblePrototype@1x/images/Layer-gitGumbling-rty5muvf.png
 imported/gitGumblePrototype@1x/images/Layer-Hamburger-mdbemjvb.png
 imported/gitGumblePrototype@1x/images/Layer-Hamburger-q0i3ndgy.png
 imported/gitGumblePrototype@1x/images/Layer-Hamburger_Copy-nzg1rte3.png
@@ -145,6 +147,7 @@ imported/gitGumblePrototype@1x/images/Layer-Left-qje1mthd.png
 imported/gitGumblePrototype@1x/images/Layer-lettersAndNumbers-otexodi4.png
 imported/gitGumblePrototype@1x/images/Layer-Like-mkmzmdux.png
 imported/gitGumblePrototype@1x/images/Layer-login_area-otzcnjvg.png
+imported/gitGumblePrototype@1x/images/Layer-logout-quzdqkrb.png
 imported/gitGumblePrototype@1x/images/Layer-Match_1-que3oeix.png
 imported/gitGumblePrototype@1x/images/Layer-Match_2-nja3ouzd.png
 imported/gitGumblePrototype@1x/images/Layer-Match_3-rja1qjvf.png
@@ -153,6 +156,7 @@ imported/gitGumblePrototype@1x/images/Layer-Match_5_-munbqurc.png
 imported/gitGumblePrototype@1x/images/Layer-navigation-ruvbodc2.png
 imported/gitGumblePrototype@1x/images/Layer-New_POP_Matches_Title-q0myqtbd.png
 imported/gitGumblePrototype@1x/images/Layer-Nope-rjiyqzew.png
+imported/gitGumblePrototype@1x/images/Layer-popMatches-rkrfnzm5.png
 imported/gitGumblePrototype@1x/images/Layer-Shapes-mkm5mzew.png
 imported/gitGumblePrototype@1x/images/Layer-Signal-ndzfqjk5.png
 imported/gitGumblePrototype@1x/images/Layer-Signal-rdbcqtg2.png

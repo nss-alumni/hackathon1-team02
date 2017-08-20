@@ -8,6 +8,9 @@ firebase.projectID = "git-gumble"
 firebase.secret = "gWGWJ6VXV8Ck0zTxYYsrrFqOHEaRqQkJ9qBDfPDX"
 firebase.debug = true
 
+# Input Setup
+InputModule = require 'input'
+
 Framer.Extras.Preloader.enable()
 
 defaultW = 640
@@ -28,7 +31,7 @@ all.centerX()
 
 # Flow component
 flow = new FlowComponent
-	backgroundColor: "#FCFFEE"
+	backgroundColor: "#FFF"
 	parent: all 
 	width: all.width
 	height: all.height
@@ -149,6 +152,18 @@ popLabel.style.textAlign = "center"
 
 popBtn.visible = false
 
+# # Clippy Layer
+# clippyLayer = new Layer
+# 	backgroundColor: "#FFF"
+# 
+# 	clippy.load 'Clippy', (agent) ->
+#       # Do anything with the loaded agent
+# 		agent.show()
+# 		agent.moveTo(250,500)
+# 		agent.speak("This is git gumble.  It judges you based on your github activity.")
+# 		agent.moveTo(250,450)
+# 		agent.speak("Swipe right if you think you'll like someone, swipe left if you think you'll hate         them.")
+# 		return
 
 # Flow Events
 screen2 = false
@@ -156,46 +171,130 @@ loginBtn.onClick ->
 	flow.showNext(s.GitGumbleIntro)
 	loginBtn.visible = false
 	iconBtn.visible = true
+	userNameLoginBox.visible = false
+	userNameInput.visible = false
+	emailLoginBox.visible = false
+	emailInput.visible = false
 	screen2 = true
 	
-	clippy.load 'Clippy', (agent) ->
-      # Do anything with the loaded agent
-		agent.show()
-		agent.moveTo(250,500)
-		agent.speak("This is git gumble.  It judges you based on your github activity.")
-		agent.moveTo(250,450)
-		agent.speak("Swipe right if you think you'll like someone, swipe left if you think you'll hate         them.")
-		return
-
 screen3 = false
 iconBtn.onClick -> 
 	flow.showNext(s.GitGumble)
-	iconBtn.visible = true
+	loginBtn.visible = false
+	iconBtn.visible = false
+	stashBtn.visible = true
+	popBtn.visible = true
+	userNameLoginBox.visible = false
+	userNameInput.visible = false
+	emailLoginBox.visible = false
+	emailInput.visible = false
 	screen2 = false
 	screen3 = true
-	
-	if screen3 == true
-		loginBtn.visible = false
-		iconBtn.visible = true
-		stashBtn.visible = false
-		popBtn.visible = false
 
 screen4 = false
 s.Hamburger.onClick -> 
 	flow.showOverlayRight(s.Navigation)
 	overlayBack = flow.children[0]
 	overlayBack.backgroundColor = "transparent"
+	loginBtn.visible = false
+	iconBtn.visible = false
+	stashBtn.visible = true
+	popBtn.visible = true
 	screen2 = false
 	screen3 = false
 	screen4 = true
+
+screen5 = false
+s.popMatches.onClick -> 
+	flow.showNext(s.)
 	
-	if screen3 == true
-		loginBtn.visible = false
-		iconBtn.visible = false
-		stashBtn.visible = true
-		popBtn.visible = true
+# Keyboard Flow Events
+
+# yellow login box outline
+userNameLoginBox = new Layer
+	width: 200
+	height: 45
+	backgroundColor: "#FFF"
+	borderRadius: 10
+	y: 320
+userNameLoginBox.centerX()
+# variable to store username info
+userNameValue = undefined
+#input box for user name
+userNameInput = new InputModule.Input
+	setup: false
+	placeholder: "Github Username"
+	fontSize: 20
+	width: 180
+	height: 25
+	x: 60
+	y: 320
+	backgroundColor: "transparent"
+# function that stores username input to username variable  
+userNameInput.on "keyup", ->
+	userNameValue = @value
+# same for email login below
+emailLoginBox = new Layer
+	width: 200
+	height: 45
+	backgroundColor: "#FFF"
+	borderRadius: 10
+	y: 380
+emailLoginBox.centerX()
+
+emailValue = undefined
+emailInput = new InputModule.Input
+	setup: false
+	placeholder: "Email"
+	fontSize: 20
+	width: 180
+	height: 25
+	x: 60
+	y: 380
+	backgroundColor: "transparent"
+
+emailInput.on "keyup", ->
+    emailValue = @value
+
+userNameInput.onClick -> 
+	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+	overlayBack = flow.children[0]
+	overlayBack.backgroundColor = "transparent"
 	
+emailInput.onClick -> 
+	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+	overlayBack = flow.children[0]
+	overlayBack.backgroundColor = "transparent"
 	
+# s.keys.onClick -> 
+# 	if screen2 == true
+# 		continueBtnignoreEvents = false
+# 		flow.showPrevious(s.screen2ExampleMobile)
+# 		s.continueBtn.animate
+# 			properties:
+# 				opacity: 1
+# 			options: 
+# 				curve: "spring(280,30,0)"
+# 		s.emailEntered.animate
+# 			width: 235
+# 			options: 
+# 				curve: "spring(280,30,0)"
+# 		s.passEntered.animate
+# 			width: 218
+# 			options: 
+# 				curve: "spring(280,30,0)"
+# 	else if screen3 == true
+# 		findCachesBtnignoreEvents = false
+# 		flow.showPrevious(s.screen3ExampleMobile)
+# 		s.findCachesBtn.animate
+# 			properties:
+# 				opacity: 1
+# 			options: 
+# 				curve: "sprint(280,30,0)"
+# 		s.userEntered.animate
+# 			width: 198
+# 			options: 
+# 				curve: "spring(280,30,0)"
 	
 ###
 	EXAMPLE CODE

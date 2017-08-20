@@ -199,11 +199,44 @@ s.Hamburger.onClick ->
 	loginBtn.visible = false
 	iconBtn.visible = false
 	stashBtn.visible = true
-	popBtn.visible = true
+	popBtn.visible = false
 	screen2 = false
 	screen3 = false
 	screen4 = true
+
+screen5 = false
+s.popMatches.onClick -> 
+	flow.showOverlayLeft(s.POP_Matches)
+	loginBtn.visible = false
+	iconBtn.visible = false
+	stashBtn.visible = false
+	popBtn.visible = false
+	screen2 = false
+	screen3 = false
+	screen4 = false
+	screen5 = true
 	
+screen3 = false
+s.gitGumbling.onClick -> 
+	flow.showPrevious(s.GitGumble)
+	popBtn.visible = true
+	screen2 = false
+	screen3 = true
+	screen4 = false
+	screen5 = false
+
+screen2 = false
+s.explained1.onClick -> 
+	flow.showOverlayLeft(s.GitGumbleIntro)
+	loginBtn.visible = false
+	iconBtn.visible = true
+	stashBtn.visible = false
+	popBtn.visible = false
+	screen2 = true
+	screen3 = false
+	screen4 = false
+	screen5 = false
+
 # Keyboard Flow Events
 
 # yellow login box outline
