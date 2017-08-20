@@ -43,36 +43,60 @@ flow.showNext(s.GitGumbleLogin)
 # password = new TextLayer
 
 loginBtn = new Layer
+	parent: all.GitGumbleLogin
 	width: 100
 	height: 50
 	backgroundColor: "#F5C252"
 	borderRadius: 10
+	y: 458 
 	shadowY: 2
 	shadowBlur: 5
 	shadowColor: "rgba(0,0,0, .5)"
 	
 loginBtn.centerX()
 
-textLabel = new Layer
+loginLabel = new Layer
 	width: 100
 	height: 50
 	backgroundColor: null
 	html: "Login"
 	superLayer: loginBtn
 	
-textLabel.style.color = "#000"     
-textLabel.style.fontSize = "20px"
-textLabel.style.fontWeight = "500"
-textLabel.style.letterSpacing = ".1em"
-textLabel.style.textTransform = "uppercase"
-textLabel.style.lineHeight = "50px"
-textLabel.style.textAlign = "center"
+loginLabel.style.color = "#000"     
+loginLabel.style.fontSize = "20px"
+loginLabel.style.fontWeight = "500"
+loginLabel.style.letterSpacing = ".1em"
+loginLabel.style.textTransform = "uppercase"
+loginLabel.style.lineHeight = "50px"
+loginLabel.style.textAlign = "center"
+
+iconBtn = new Layer
+	parent: all.GitGumbleIntro
+	width: 78
+	height: 78
+	borderRadius: "50%"
+	backgroundColor: "transparent"
+	borderColor: "rgba(255,255,255, .12)"
+	borderWidth: .5
+	x: 125
+	y: 489        
+	shadowY: 8
+	shadowBlur: 8
+	shadowColor: "rgba(0,0,0, .24)"
 
 # Flow Events
 screen2 = false
 loginBtn.onClick -> 
 	flow.showNext(s.GitGumbleIntro)
 	screen2 = true
+	loginBtn.visible = false
+	
+screen3 = false
+iconBtn.onClick -> 
+	flow.showNext(s.GitGumble)
+	iconBtn.visible = true
+	screen2 = false
+	screen3 = true
 
 ###
 	EXAMPLE CODE
