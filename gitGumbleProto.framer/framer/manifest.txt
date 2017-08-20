@@ -1,10 +1,57 @@
 app.coffee
-framer/backups/backup-2017-08-20 07.10.56.coffee
-framer/backups/backup-2017-08-20 07.10.56.vekter
-framer/backups/backup-2017-08-20 09.59.00.coffee
-framer/backups/backup-2017-08-20 09.59.00.vekter
-framer/backups/backup-2017-08-20 10.06.00.coffee
-framer/backups/backup-2017-08-20 10.07.00.coffee
+clippyjs/agents/Bonzi/agent.js
+clippyjs/agents/Bonzi/map.png
+clippyjs/agents/Bonzi/sounds-mp3.js
+clippyjs/agents/Bonzi/sounds-ogg.js
+clippyjs/agents/Clippy/agent.js
+clippyjs/agents/Clippy/map.png
+clippyjs/agents/Clippy/sounds-mp3.js
+clippyjs/agents/Clippy/sounds-ogg.js
+clippyjs/agents/F1/agent.js
+clippyjs/agents/F1/map.png
+clippyjs/agents/F1/sounds-mp3.js
+clippyjs/agents/F1/sounds-ogg.js
+clippyjs/agents/Genie/agent.js
+clippyjs/agents/Genie/map.png
+clippyjs/agents/Genie/sounds-mp3.js
+clippyjs/agents/Genie/sounds-ogg.js
+clippyjs/agents/Genius/agent.js
+clippyjs/agents/Genius/map.png
+clippyjs/agents/Genius/sounds-mp3.js
+clippyjs/agents/Genius/sounds-ogg.js
+clippyjs/agents/Links/agent.js
+clippyjs/agents/Links/map.png
+clippyjs/agents/Links/sounds-mp3.js
+clippyjs/agents/Links/sounds-ogg.js
+clippyjs/agents/Merlin/agent.js
+clippyjs/agents/Merlin/map.png
+clippyjs/agents/Merlin/sounds-mp3.js
+clippyjs/agents/Merlin/sounds-ogg.js
+clippyjs/agents/Peedy/agent.js
+clippyjs/agents/Peedy/map.png
+clippyjs/agents/Peedy/sounds-mp3.js
+clippyjs/agents/Peedy/sounds-ogg.js
+clippyjs/agents/Rocky/agent.js
+clippyjs/agents/Rocky/map.png
+clippyjs/agents/Rocky/sounds-mp3.js
+clippyjs/agents/Rocky/sounds-ogg.js
+clippyjs/agents/Rover/agent.js
+clippyjs/agents/Rover/map.png
+clippyjs/agents/Rover/sounds-mp3.js
+clippyjs/agents/Rover/sounds-ogg.js
+clippyjs/build/clippy.css
+clippyjs/build/clippy.js
+clippyjs/build/clippy.min.js
+clippyjs/MIT-LICENSE.txt
+clippyjs/README.md
+clippyjs/src/agent.js
+clippyjs/src/animator.js
+clippyjs/src/balloon.js
+clippyjs/src/clippy.css
+clippyjs/src/images/border.png
+clippyjs/src/images/tip.png
+clippyjs/src/load.js
+clippyjs/src/queue.js
 framer/backups/backup-2017-08-20 10.26.00.coffee
 framer/backups/backup-2017-08-20 10.27.00.coffee
 framer/backups/backup-2017-08-20 10.28.00.coffee
@@ -12,26 +59,39 @@ framer/backups/backup-2017-08-20 10.29.00.coffee
 framer/backups/backup-2017-08-20 10.30.00.coffee
 framer/backups/backup-2017-08-20 10.31.00.coffee
 framer/backups/backup-2017-08-20 10.32.00.coffee
-framer/backups/backup-2017-08-20 10.33.00.coffee
-framer/backups/backup-2017-08-20 10.34.00.coffee
-framer/backups/backup-2017-08-20 10.35.00.coffee
-framer/backups/backup-2017-08-20 10.36.00.coffee
-framer/backups/backup-2017-08-20 10.37.00.coffee
-framer/backups/backup-2017-08-20 10.38.00.coffee
-framer/backups/backup-2017-08-20 10.39.00.coffee
-framer/backups/backup-2017-08-20 10.40.00.coffee
-framer/backups/backup-2017-08-20 10.41.00.coffee
-framer/backups/backup-2017-08-20 10.42.00.coffee
-framer/backups/backup-2017-08-20 10.43.00.coffee
-framer/backups/backup-2017-08-20 10.44.00.coffee
-framer/backups/backup-2017-08-20 10.45.00.coffee
-framer/backups/backup-2017-08-20 10.49.00.coffee
-framer/backups/backup-2017-08-20 10.50.00.coffee
-framer/backups/backup-2017-08-20 10.51.00.coffee
-framer/backups/backup-2017-08-20 10.52.00.coffee
-framer/backups/backup-2017-08-20 10.53.01.coffee
-framer/backups/backup-2017-08-20 10.55.00.coffee
-framer/backups/backup-2017-08-20 10.57.00.coffee
+framer/backups/backup-2017-08-20 11.07.12.coffee
+framer/backups/backup-2017-08-20 11.07.12.vekter
+framer/backups/backup-2017-08-20 11.10.12.coffee
+framer/backups/backup-2017-08-20 11.11.12.coffee
+framer/backups/backup-2017-08-20 11.23.12.coffee
+framer/backups/backup-2017-08-20 11.24.12.coffee
+framer/backups/backup-2017-08-20 11.25.12.coffee
+framer/backups/backup-2017-08-20 11.29.13.coffee
+framer/backups/backup-2017-08-20 11.30.12.coffee
+framer/backups/backup-2017-08-20 11.34.12.coffee
+framer/backups/backup-2017-08-20 11.35.12.coffee
+framer/backups/backup-2017-08-20 11.36.12.coffee
+framer/backups/backup-2017-08-20 11.39.12.coffee
+framer/backups/backup-2017-08-20 11.40.12.coffee
+framer/backups/backup-2017-08-20 11.41.12.coffee
+framer/backups/backup-2017-08-20 11.43.12.coffee
+framer/backups/backup-2017-08-20 11.46.12.coffee
+framer/backups/backup-2017-08-20 11.47.12.coffee
+framer/backups/backup-2017-08-20 11.49.12.coffee
+framer/backups/backup-2017-08-20 11.51.13.coffee
+framer/backups/backup-2017-08-20 11.52.12.coffee
+framer/backups/backup-2017-08-20 12.03.13.coffee
+framer/backups/backup-2017-08-20 12.04.13.coffee
+framer/backups/backup-2017-08-20 12.05.13.coffee
+framer/backups/backup-2017-08-20 12.06.13.coffee
+framer/backups/backup-2017-08-20 12.07.13.coffee
+framer/backups/backup-2017-08-20 12.08.13.coffee
+framer/backups/backup-2017-08-20 12.09.13.coffee
+framer/backups/backup-2017-08-20 12.10.13.coffee
+framer/backups/backup-2017-08-20 12.11.13.coffee
+framer/backups/backup-2017-08-20 12.12.13.coffee
+framer/backups/backup-2017-08-20 12.15.13.coffee
+framer/backups/backup-2017-08-20 12.16.13.coffee
 framer/coffee-script.js
 framer/config.json
 framer/design.vekter
