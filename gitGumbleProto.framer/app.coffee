@@ -86,6 +86,7 @@ iconBtn = new Layer
 
 # Flow Events
 screen2 = false
+# iconBtn.visible = false
 loginBtn.onClick -> 
 	flow.showNext(s.GitGumbleIntro)
 	screen2 = true
