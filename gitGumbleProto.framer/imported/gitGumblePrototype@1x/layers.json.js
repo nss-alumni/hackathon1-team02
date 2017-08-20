@@ -560,8 +560,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 	{
 		"objectId": "8421F595-CFC4-4FC0-A292-488CD23AD820",
 		"kind": "artboard",
-		"name": "GitGumble_Login",
-		"originalName": "GitGumble Login",
+		"name": "GitGumbleLogin",
+		"originalName": "GitGumbleLogin",
 		"maskFrame": null,
 		"layerFrame": {
 			"x": 770,
@@ -1334,8 +1334,8 @@ window.__imported__["gitGumblePrototype@1x/layers.json.js"] = [
 	{
 		"objectId": "30CD0A92-A203-4BCD-AE4B-75C6ADB0339B",
 		"kind": "artboard",
-		"name": "GitGumble_Intro",
-		"originalName": "GitGumble Intro",
+		"name": "GitGumbleIntro",
+		"originalName": "GitGumbleIntro",
 		"maskFrame": null,
 		"layerFrame": {
 			"x": 1131,
