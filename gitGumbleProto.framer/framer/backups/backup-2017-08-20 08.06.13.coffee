@@ -1,4 +1,3 @@
-{Firebase} = require 'firebase'
 # Firebase Setup
 
 ###
@@ -32,10 +31,7 @@ button = new Layer
 	borderRadius: 10
 Utils.labelLayer button, "Tap to increment"
 
-firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
-firebase.projectID = "git-gumble"
-firebase.secret = "gWGWJ6VXV8Ck0zTxYYsrrFqOHEaRqQkJ9qBDfPDX"
-firebase.debug = true
+# firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
 # 
 # count = null
 # 

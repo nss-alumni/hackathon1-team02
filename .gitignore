@@ -1,0 +1,26 @@
+
+.DS_Store
+node_modules
+test/init.js
+test/lib/framer.js
+*.swp
+build/template
+build
+lib
+.build
+.deploy
+*.pyc
+npm-debug.log
+test/phantomjs/tests.js
+test/phantomjs/tests.js.map
+framer/**/*.js
+framer/**/*.js.map
+test/tests/**/*.js
+test/tests/**/*.js.map
+
+# Discard changes in Studio.framer
+extras/Studio.framer/app.coffee
+extras/Studio.framer/framer/config.json
+
+# Discard version changes
+framer/Version.coffee
