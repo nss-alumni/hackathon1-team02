@@ -191,8 +191,6 @@ newUser = (usersArray) ->
 			shadowColor: "rgba(0,0,0,.5)"
 			clip: true
 		swipeCard.centerX()
-		swipeCard.visible = true
-		print swipeCard
 
 	console.log(usersArray)
 	usersLength = usersArray.length

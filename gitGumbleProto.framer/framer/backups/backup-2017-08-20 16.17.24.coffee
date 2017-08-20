@@ -178,22 +178,7 @@ swipeCard.visible = false
 
 newUser = (usersArray) ->
 	if swipeCard
-		swipeCard.visible = true
-	else 
-		swipeCard = new Layer
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#FFF"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
-		swipeCard.visible = true
-		print swipeCard
-
+		swipeCard.visible = false
 	console.log(usersArray)
 	usersLength = usersArray.length
 	randomNumber = Math.floor(Math.random() * usersLength) + 1  
@@ -462,14 +447,12 @@ swipeCard.on Events.DragEnd, ->
 		else
 			swipeCard.animate("goLeftDown")
 		swipeCard.destroy()
-		newUser(usersArray)
 	else if swipeCard.midX > Screen.width
 		if swipeCard.midY < Screen.height/2
 			swipeCard.animate("goRightUp")
 		else
 			swipeCard.animate("goRightDown")
 		swipeCard.destroy()
-		newUser(usersArray)
 
 swipeCard.on Events.DragMove, ->
 	rotateCard(this)

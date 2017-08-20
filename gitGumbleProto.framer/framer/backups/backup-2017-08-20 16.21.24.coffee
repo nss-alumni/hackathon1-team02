@@ -179,20 +179,17 @@ swipeCard.visible = false
 newUser = (usersArray) ->
 	if swipeCard
 		swipeCard.visible = true
-	else 
-		swipeCard = new Layer
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#FFF"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
-		swipeCard.visible = true
-		print swipeCard
+	else swipeCard = new Layer
+		width: cardWidth
+		height: cardHeight
+		borderRadius: 10
+		backgroundColor: "#FFF"
+		y: 80
+		shadowY: 2
+		shadowBlur: 5
+		shadowColor: "rgba(0,0,0,.5)"
+		clip: true
+	swipeCard.centerX()
 
 	console.log(usersArray)
 	usersLength = usersArray.length

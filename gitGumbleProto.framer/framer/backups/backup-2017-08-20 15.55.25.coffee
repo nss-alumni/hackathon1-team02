@@ -3,7 +3,7 @@ s = Framer.Importer.load("imported/gitGumblePrototype@1x")
 
 # Firebase Setup
 {Firebase} = require 'firebase'
-firebase = new Firebase "https://git-gumble.firebaseio.com/"
+firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
 firebase.projectID = "git-gumble"
 firebase.secret = "gWGWJ6VXV8Ck0zTxYYsrrFqOHEaRqQkJ9qBDfPDX"
 firebase.debug = true
@@ -161,39 +161,9 @@ s.Swipe_Card.visible = false
 cardWidth = 250
 cardHeight = 369
 
-swipeCard = new Layer
-# 	parent: all.GitGumble
-	width: cardWidth
-	height: cardHeight
-	borderRadius: 10
-	backgroundColor: "#FFF"
-	y: 80
-	shadowY: 2
-	shadowBlur: 5
-	shadowColor: "rgba(0,0,0,.5)"
-	clip: true
-swipeCard.centerX()
-
-swipeCard.visible = false
-
-newUser = (usersArray) ->
+newUser = (usersArray)->
 	if swipeCard
-		swipeCard.visible = true
-	else 
-		swipeCard = new Layer
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#FFF"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
-		swipeCard.visible = true
-		print swipeCard
-
+		swipeCard.visible = false
 	console.log(usersArray)
 	usersLength = usersArray.length
 	randomNumber = Math.floor(Math.random() * usersLength) + 1  
@@ -205,15 +175,78 @@ newUser = (usersArray) ->
 	console.log(commitNumber)
 	commitPercent = commitNumber / 1000
 	if commitPercent < 0.20
-		swipeCard.backgroundColor = "#eee"
-	else if commitPercent > 0.20 && commitPercent < 0.40
-		swipeCard.backgroundColor = "#c6e48b"
-	else if commitPercent > 0.40 && commitPercent < 0.60
-		swipeCard.backgroundColor = "#7bc96f"
-	else if commitPercent > 0.60 && commitPercent < 0.80
-		swipeCard.backgroundColor = "#239a3b"
-	else if commitPercent > 0.80
-		swipeCard.backgroundColor = "#196127"
+		swipeCard = new Layer
+			parent: all.GitGumble
+			width: cardWidth
+			height: cardHeight
+			borderRadius: 10
+			backgroundColor: "#eee"
+			y: 80
+			shadowY: 2
+			shadowBlur: 5
+			shadowColor: "rgba(0,0,0,.5)"
+		swipeCard.centerX()
+    else if commitPercent > 0.20 && commitPercent < 0.40
+        swipeCard = new Layer
+			parent: all.GitGumble
+			width: cardWidth
+			height: cardHeight
+			borderRadius: 10
+			backgroundColor: "#eee"
+			y: 80
+			shadowY: 2
+			shadowBlur: 5
+			shadowColor: "rgba(0,0,0,.5)"
+		swipeCard.centerX()
+    else if commitPercent > 0.40 && commitPercent < 0.60
+        swipeCard = new Layer
+			parent: all.GitGumble
+			width: cardWidth
+			height: cardHeight
+			borderRadius: 10
+			backgroundColor: "#eee"
+			y: 80
+			shadowY: 2
+			shadowBlur: 5
+			shadowColor: "rgba(0,0,0,.5)"
+		swipeCard.centerX()
+    else if commitPercent > 0.60 && commitPercent < 0.80
+        swipeCard = new Layer
+			parent: all.GitGumble
+			width: cardWidth
+			height: cardHeight
+			borderRadius: 10
+			backgroundColor: "#eee"
+			y: 80
+			shadowY: 2
+			shadowBlur: 5
+			shadowColor: "rgba(0,0,0,.5)"
+		swipeCard.centerX()
+    else if commitPercent > 0.80
+        swipeCard = new Layer
+            parent: all.GitGumble
+            width: 227
+            height: 369
+            borderRadius: 10
+            backgroundColor: "#196127"
+            y: 67
+            shadowY: 2
+            shadowBlur: 5
+            shadowColor: "rgba(0,0,0,.5)"
+        swipeCard.centerX()
+
+swipeCard = new Layer
+	parent: all.GitGumble
+	width: cardWidth
+	height: cardHeight
+	borderRadius: 10
+	backgroundColor: "red"
+	y: 80
+	shadowY: 2
+	shadowBlur: 5
+	shadowColor: "rgba(0,0,0, .5)"
+	clip: true
+swipeCard.centerX()
 
 likeLabel = new Layer
 	width: cardWidth 
@@ -245,27 +278,21 @@ nopeLabel = new Layer
 # 		return
 
 # Flow Events
-usersArray = []
-globalArray = []
-getAllUsers = (users)->
-	usersArray = _.toArray(users)
-
 screen2 = false
 loginBtn.onClick -> 
 	flow.showNext(s.GitGumbleIntro)
-	firebase.get("/users", getAllUsers, {orderBy: "$key"})
 	loginBtn.visible = false
 	iconBtn.visible = true
 	userNameLoginBox.visible = false
 	userNameInput.visible = false
 	emailLoginBox.visible = false
 	emailInput.visible = false
+	swipeCard.visible = false
 	screen2 = true
 	
 screen3 = false
 iconBtn.onClick -> 
 	flow.showNext(s.GitGumble)
-	newUser(usersArray)
 	loginBtn.visible = false
 	iconBtn.visible = false
 	stashBtn.visible = true
@@ -371,15 +398,15 @@ emailInput = new InputModule.Input
 emailInput.on "keyup", ->
     emailValue = @value
 
-# userNameInput.onClick -> 
-# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-# 	overlayBack = flow.children[0]
-# 	overlayBack.backgroundColor = "transparent"
-# 	
-# emailInput.onClick -> 
-# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-# 	overlayBack = flow.children[0]
-# 	overlayBack.backgroundColor = "transparent"
+userNameInput.onClick -> 
+	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+	overlayBack = flow.children[0]
+	overlayBack.backgroundColor = "transparent"
+	
+emailInput.onClick -> 
+	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+	overlayBack = flow.children[0]
+	overlayBack.backgroundColor = "transparent"
 	
 # s.keys.onClick -> 
 # 	if screen2 == true
@@ -411,12 +438,66 @@ emailInput.on "keyup", ->
 # 			options: 
 # 				curve: "spring(280,30,0)"
 	
+###
+	EXAMPLE CODE
+###
+
+# https://codepen.io/stakes/pen/LELrdX 
+
+# countLabel = new Layer
+# 	x: 300
+# 	y: 28
+# 	width: 500
+# 	height: 140
+# 	backgroundColor: null
+# # countLabel.html = count
+# countLabel.style = 
+# 	fontFamily: "Helvetica, Arial, sans-serif"
+# 	fontSize: "100px"
+# 	lineHeight: "100px"
+# 	color: "#000000"
+# 
+# button = new Layer
+# 	width: 240
+# 	x: 20
+# 	y: 20
+# 	backgroundColor: "#E91E63"
+# 	borderRadius: 10
+# Utils.labelLayer button, "Tap to increment"
+
+# firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
+# 
+# count = null
+# 
+# firebase.on "value", (dataSnapshot)->
+#   
+# 	count = dataSnapshot.val().count
+# 	countLabel.html = count
+# 
+#   
+# button.on Events.Click, ->
+#   
+# 	firebase.set 
+# 		count: count+1
+#     
+# 	@opacity = .5
+# 	@animate
+# 		properties:
+# 			opacity: 1
+# 		time: .25
+
+# Github OAuth
+
+# Github JSON 
+
+# Swipe functionality 
+
 swipeCard.childDic = {
 	"like" : likeLabel
 	"nope" : nopeLabel
 }
 
-swipeCard.states = {
+swipeCard.states.add {
 	"goLeftUp":
 		x: -Screen.width
 		y: -swipeCard.y
@@ -458,22 +539,21 @@ swipeCard.on Events.DragEnd, ->
 #     magnitude = Math.sqrt(Math.pow(card.draggable.velocity.x,2) + Math.pow(card.draggable.velocity.y,2))     
 	if swipeCard.midX < 0
 		if swipeCard.midY < Screen.height/2
-			swipeCard.animate("goLeftUp")
+			swipeCard.states.switch("goLeftUp")
 		else
-			swipeCard.animate("goLeftDown")
+			swipeCard.states.switch("goLeftDown")
 		swipeCard.destroy()
-		newUser(usersArray)
 	else if swipeCard.midX > Screen.width
 		if swipeCard.midY < Screen.height/2
-			swipeCard.animate("goRightUp")
+			swipeCard.states.switch("goRightUp")
 		else
-			swipeCard.animate("goRightDown")
+			swipeCard.states.switch("goRightDown")
 		swipeCard.destroy()
-		newUser(usersArray)
 
 swipeCard.on Events.DragMove, ->
 	rotateCard(this)
 	showLikeOrNope(this)
+
 
 # Flow component
 flow = new FlowComponent

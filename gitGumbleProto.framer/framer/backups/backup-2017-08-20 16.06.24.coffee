@@ -3,7 +3,7 @@ s = Framer.Importer.load("imported/gitGumblePrototype@1x")
 
 # Firebase Setup
 {Firebase} = require 'firebase'
-firebase = new Firebase "https://git-gumble.firebaseio.com/"
+firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
 firebase.projectID = "git-gumble"
 firebase.secret = "gWGWJ6VXV8Ck0zTxYYsrrFqOHEaRqQkJ9qBDfPDX"
 firebase.debug = true
@@ -162,7 +162,7 @@ cardWidth = 250
 cardHeight = 369
 
 swipeCard = new Layer
-# 	parent: all.GitGumble
+	parent: all.GitGumble
 	width: cardWidth
 	height: cardHeight
 	borderRadius: 10
@@ -174,26 +174,9 @@ swipeCard = new Layer
 	clip: true
 swipeCard.centerX()
 
-swipeCard.visible = false
-
 newUser = (usersArray) ->
 	if swipeCard
-		swipeCard.visible = true
-	else 
-		swipeCard = new Layer
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#FFF"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
-		swipeCard.visible = true
-		print swipeCard
-
+		swipeCard.visible = false
 	console.log(usersArray)
 	usersLength = usersArray.length
 	randomNumber = Math.floor(Math.random() * usersLength) + 1  
@@ -371,15 +354,15 @@ emailInput = new InputModule.Input
 emailInput.on "keyup", ->
     emailValue = @value
 
-# userNameInput.onClick -> 
-# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-# 	overlayBack = flow.children[0]
-# 	overlayBack.backgroundColor = "transparent"
-# 	
-# emailInput.onClick -> 
-# 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
-# 	overlayBack = flow.children[0]
-# 	overlayBack.backgroundColor = "transparent"
+userNameInput.onClick -> 
+	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+	overlayBack = flow.children[0]
+	overlayBack.backgroundColor = "transparent"
+	
+emailInput.onClick -> 
+	flow.showOverlayBottom(s.keyboard1ExampleMobile)
+	overlayBack = flow.children[0]
+	overlayBack.backgroundColor = "transparent"
 	
 # s.keys.onClick -> 
 # 	if screen2 == true
@@ -462,14 +445,12 @@ swipeCard.on Events.DragEnd, ->
 		else
 			swipeCard.animate("goLeftDown")
 		swipeCard.destroy()
-		newUser(usersArray)
 	else if swipeCard.midX > Screen.width
 		if swipeCard.midY < Screen.height/2
 			swipeCard.animate("goRightUp")
 		else
 			swipeCard.animate("goRightDown")
 		swipeCard.destroy()
-		newUser(usersArray)
 
 swipeCard.on Events.DragMove, ->
 	rotateCard(this)

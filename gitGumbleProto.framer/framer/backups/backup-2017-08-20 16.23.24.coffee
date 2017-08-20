@@ -192,7 +192,6 @@ newUser = (usersArray) ->
 			clip: true
 		swipeCard.centerX()
 		swipeCard.visible = true
-		print swipeCard
 
 	console.log(usersArray)
 	usersLength = usersArray.length
