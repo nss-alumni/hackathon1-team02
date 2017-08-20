@@ -35,7 +35,6 @@ Utils.labelLayer button, "Tap to increment"
 firebase = new Firebase "https://simpleframerdemo.firebaseio.com/"
 firebase.projectID = "git-gumble"
 firebase.secret = "gWGWJ6VXV8Ck0zTxYYsrrFqOHEaRqQkJ9qBDfPDX"
-firebase.debug = true
 # 
 # count = null
 # 
