@@ -52,27 +52,6 @@ clippyjs/src/images/border.png
 clippyjs/src/images/tip.png
 clippyjs/src/load.js
 clippyjs/src/queue.js
-framer/backups/backup-2017-08-20 15.55.25.coffee
-framer/backups/backup-2017-08-20 15.56.25.coffee
-framer/backups/backup-2017-08-20 15.57.24.coffee
-framer/backups/backup-2017-08-20 15.58.24.coffee
-framer/backups/backup-2017-08-20 15.59.24.coffee
-framer/backups/backup-2017-08-20 16.00.24.coffee
-framer/backups/backup-2017-08-20 16.01.24.coffee
-framer/backups/backup-2017-08-20 16.02.24.coffee
-framer/backups/backup-2017-08-20 16.03.24.coffee
-framer/backups/backup-2017-08-20 16.05.24.coffee
-framer/backups/backup-2017-08-20 16.06.24.coffee
-framer/backups/backup-2017-08-20 16.07.24.coffee
-framer/backups/backup-2017-08-20 16.10.24.coffee
-framer/backups/backup-2017-08-20 16.11.24.coffee
-framer/backups/backup-2017-08-20 16.12.24.coffee
-framer/backups/backup-2017-08-20 16.13.24.coffee
-framer/backups/backup-2017-08-20 16.14.24.coffee
-framer/backups/backup-2017-08-20 16.15.24.coffee
-framer/backups/backup-2017-08-20 16.16.24.coffee
-framer/backups/backup-2017-08-20 16.17.24.coffee
-framer/backups/backup-2017-08-20 16.18.24.coffee
 framer/backups/backup-2017-08-20 16.19.24.coffee
 framer/backups/backup-2017-08-20 16.20.24.coffee
 framer/backups/backup-2017-08-20 16.21.24.coffee
@@ -92,6 +71,27 @@ framer/backups/backup-2017-08-20 16.52.24.coffee
 framer/backups/backup-2017-08-20 16.53.24.coffee
 framer/backups/backup-2017-08-20 16.54.24.coffee
 framer/backups/backup-2017-08-20 16.55.24.coffee
+framer/backups/backup-2017-08-20 16.56.24.coffee
+framer/backups/backup-2017-08-20 16.57.24.coffee
+framer/backups/backup-2017-08-20 16.58.24.coffee
+framer/backups/backup-2017-08-20 17.00.24.coffee
+framer/backups/backup-2017-08-20 17.01.24.coffee
+framer/backups/backup-2017-08-20 17.05.24.coffee
+framer/backups/backup-2017-08-20 17.06.24.coffee
+framer/backups/backup-2017-08-20 17.07.24.coffee
+framer/backups/backup-2017-08-20 17.14.24.coffee
+framer/backups/backup-2017-08-20 17.15.24.coffee
+framer/backups/backup-2017-08-20 17.18.17.coffee
+framer/backups/backup-2017-08-20 17.18.17.vekter
+framer/backups/backup-2017-08-20 17.19.17.coffee
+framer/backups/backup-2017-08-20 17.20.17.coffee
+framer/backups/backup-2017-08-20 17.22.17.coffee
+framer/backups/backup-2017-08-20 17.23.17.coffee
+framer/backups/backup-2017-08-20 17.24.17.coffee
+framer/backups/backup-2017-08-20 17.25.17.coffee
+framer/backups/backup-2017-08-20 17.26.17.coffee
+framer/backups/backup-2017-08-20 17.27.17.coffee
+framer/backups/backup-2017-08-20 17.28.17.coffee
 framer/coffee-script.js
 framer/config.json
 framer/design.vekter
@@ -169,4 +169,5 @@ imported/gitGumblePrototype@1x/layers.json.js
 index.html
 modules/firebase.coffee
 modules/input.coffee
+modules/keyboard.png
 modules/myModule.coffee

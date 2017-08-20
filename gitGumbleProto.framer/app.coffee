@@ -31,8 +31,6 @@ all.centerX()
 
 # Button States 
 # screen 1 : GitGumbleLogin
-# username = new TextLayer
-# password = new TextLayer
 
 loginBtn = new Layer
 	parent: all.GitGumbleLogin
@@ -149,42 +147,104 @@ s.Swipe_Card.visible = false
 cardWidth = 250
 cardHeight = 369
 
-swipeCard = new Layer
-	parent: all.GitGumble
-	width: cardWidth
-	height: cardHeight
-	borderRadius: 10
-	backgroundColor: "#FFF"
-	y: 80
-	shadowY: 2
-	shadowBlur: 5
-	shadowColor: "rgba(0,0,0,.5)"
-	clip: true
-swipeCard.centerX()
 
-swipeCard.visible = false
+newSwipeCard = ()->
+	swipeCard = new Layer
+#   parent: all.GitGumble
+		width: cardWidth
+		height: cardHeight
+		borderRadius: 10
+		backgroundColor: "#FFF"
+		y: 80
+		shadowY: 2
+		shadowBlur: 5
+		shadowColor: "rgba(0,0,0,.5)"
+		clip: true
+	swipeCard.centerX()
+	swipeCard.visible = false
 
+	swipeCard.on Events.Move,->
+		rotateCard(this)
+		showLikeOrNope(this)
+
+	likeLabel = new Layer
+		width: cardWidth
+		height: 50
+		parent: swipeCard
+		backgroundColor: "#9cdaef"
+		opacity: 0
+		name: "like"
+
+	nopeLabel = new Layer
+		width: cardWidth
+		height: 50
+		parent: swipeCard
+		backgroundColor: "#F5C252"
+		opacity: 0
+	swipeCard.on Events.DragEnd, ->
+#     magnitude = Math.sqrt(Math.pow(card.draggable.velocity.x,2) + Math.pow(card.draggable.velocity.y,2))
+		if swipeCard.midX < 0
+			if swipeCard.midY < Screen.height/2
+				swipeCard.animate("goLeftUp")
+			else
+				swipeCard.animate("goLeftDown")
+			swipeCard.destroy()
+
+			newUser(usersArray)
+		else if swipeCard.midX > Screen.width
+			if swipeCard.midY < Screen.height/2
+				swipeCard.animate("goRightUp")
+			else
+				swipeCard.animate("goRightDown")
+			swipeCard.destroy()
+			newUser(usersArray)
+
+	swipeCard.on Events.DragMove, ->
+		rotateCard(this)
+		showLikeOrNope(this)
+
+	swipeCard.childDic = {
+		"like" : likeLabel
+		"nope" : nopeLabel
+	}
+	swipeCard.states = {
+		"goLeftUp":
+			x: -Screen.width
+			y: -swipeCard.y
+		"goLeftDown":
+			x: -Screen.width
+			y: Screen.height
+		"goRightUp":
+			x: Screen.width + swipeCard.width
+			y: -swipeCard.y
+		"goRightDown":
+			x: Screen.width + swipeCard.width
+			y: Screen.height
+	}
+	swipeCard.states.animationOptions = {
+		curve:"ease"
+		time:0.3
+	}
+	swipeCard.center()
+	swipeCard.draggable.enabled = true
+	rotateCard = (layer) ->
+		layer.rotationZ = Utils.modulate(layer.midX, [0,Screen.width], [10,-10])
+	showLikeOrNope = (layer) ->
+		if layer.midX < Screen.width/2
+			layer.childDic["nope"].opacity = Utils.modulate(layer.midX,[100,Screen.width/2], [1,0])
+		else
+			layer.childDic["like"].opacity = Utils.modulate(layer.midX, [Screen.width/2,Screen.width-100], [0,1])	
+	return swipeCard
+	
+# NEW USER
 newUser = (usersArray) ->
+	swipeCard = newSwipeCard()
 	if swipeCard
 		swipeCard.visible = true
-	else 
-		swipeCard = new Layer
-			width: cardWidth
-			height: cardHeight
-			borderRadius: 10
-			backgroundColor: "#FFF"
-			y: 80
-			shadowY: 2
-			shadowBlur: 5
-			shadowColor: "rgba(0,0,0,.5)"
-			clip: true
-		swipeCard.centerX()
-		swipeCard.visible = true
-		print swipeCard
 
 	console.log(usersArray)
 	usersLength = usersArray.length
-	randomNumber = Math.floor(Math.random() * usersLength) + 1  
+	randomNumber = Math.floor(Math.random() * usersLength) 
 	console.log(randomNumber)
 	if !globalArray.includes(randomNumber)
 		currentMatch = usersArray[randomNumber]
@@ -203,20 +263,6 @@ newUser = (usersArray) ->
 	else if commitPercent > 0.80
 		swipeCard.backgroundColor = "#196127"
 
-likeLabel = new Layer
-	width: cardWidth 
-	height: 50
-	parent: swipeCard
-	backgroundColor: "#9cdaef"
-	opacity: 0
-	name: "like"
-
-nopeLabel = new Layer		
-	width: cardWidth 
-	height: 50
-	parent: swipeCard
-	backgroundColor: "#F5C252"
-	opacity: 0
 
 # Flow Events
 usersArray = []
@@ -226,11 +272,11 @@ getAllUsers = (users)->
 
 screen2 = false
 loginBtn.onClick -> 
-	print userNameValue
+#	print userNameValue
 	users_url = "/users/#{userNameValue}"
 	firebase.get users_url, (user) ->
-		print "Here is your user"
-		print user
+#		print "Here is your user"
+#		print user
 		if user
 			flow.showNext(s.GitGumbleIntro)
 			loginBtn.visible = false
@@ -281,6 +327,7 @@ s.Hamburger.onClick ->
 	iconBtn.visible = false
 	stashBtn.visible = true
 	popBtn.visible = false
+	
 	screen2 = false
 	screen3 = false
 	screen4 = true
@@ -323,7 +370,7 @@ onScreenUser = () ->
 	
 popBtn.onClick ->
 	firebase.post("/history/", {currentUserID : currentUser.github_username, matchID : onScreenUser(), pop : true})
-	print currentUser
+#	print currentUser
 	flow.showNext(s.GitGumbleIntro)
 	screen2 = true
 	loginBtn.visible = false
@@ -385,70 +432,8 @@ emailInput.on "keyup", ->
 # 	flow.showOverlayBottom(s.keyboard1ExampleMobile)
 # 	overlayBack = flow.children[0]
 # 	overlayBack.backgroundColor = "transparent"
-		
-swipeCard.childDic = {
-	"like" : likeLabel
-	"nope" : nopeLabel
-}
 
-swipeCard.states = {
-	"goLeftUp":
-		x: -Screen.width
-		y: -swipeCard.y
-	"goLeftDown":
-		x: -Screen.width
-		y: Screen.height 
-	"goRightUp":
-		x: Screen.width + swipeCard.width
-		y: -swipeCard.y
-	"goRightDown":
-		x: Screen.width + swipeCard.width
-		y: Screen.height
-}
 
-swipeCard.states.animationOptions = {
-    curve:"ease"
-    time:0.3
-}
-
-swipeCard.center()
-swipeCard.draggable.enabled = true
-# card.draggable.constraints = card.frame
-
-rotateCard = (layer) ->
-	layer.rotationZ = Utils.modulate(layer.midX, [0,Screen.width], [10,-10])
-
-showLikeOrNope = (layer) ->
-	if layer.midX < Screen.width/2
-		layer.childDic["nope"].opacity = Utils.modulate(layer.midX, [100,Screen.width/2], [1,0])
-	else
-		layer.childDic["like"].opacity = Utils.modulate(layer.midX, [Screen.width/2,Screen.width-100], [0,1])
-
-# ===========EVENT===========
-swipeCard.on Events.Move,->
-	rotateCard(this)
-	showLikeOrNope(this)
-
-swipeCard.on Events.DragEnd, ->
-#     magnitude = Math.sqrt(Math.pow(card.draggable.velocity.x,2) + Math.pow(card.draggable.velocity.y,2))     
-	if swipeCard.midX < 0
-		if swipeCard.midY < Screen.height/2
-			swipeCard.animate("goLeftUp")
-		else
-			swipeCard.animate("goLeftDown")
-		swipeCard.destroy()
-		newUser(usersArray)
-	else if swipeCard.midX > Screen.width
-		if swipeCard.midY < Screen.height/2
-			swipeCard.animate("goRightUp")
-		else
-			swipeCard.animate("goRightDown")
-		swipeCard.destroy()
-		newUser(usersArray)
-
-swipeCard.on Events.DragMove, ->
-	rotateCard(this)
-	showLikeOrNope(this)
 
 # Flow component
 flow = new FlowComponent
@@ -458,4 +443,5 @@ flow = new FlowComponent
 	height: all.height
 
 flow.showNext(s.GitGumbleLogin)
+
 
